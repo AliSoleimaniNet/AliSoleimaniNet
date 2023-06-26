@@ -1,5 +1,5 @@
 # 💫 About Me:
-👨‍💻 i'm .net developer<br>🤖 i'm interested in Neural network and deep learning<br>🐍 i'm also python, c++ proggramer<br>💻 i have worked on Qt Cpp, Python web scraping, MVVM WPF projects<br>🌱 I’m currently learning machine learning 
+👨‍💻 i'm .net developer<br>🤖 i'm interested in Neural network and deep learning<br>🐍 i'm also python, c++ proggramer<br>💻 i have worked on ASP.NET, Text Classification, Qt Cpp, Python web scraping, MVVM WPF projects<br>🌱 I’m currently learning machine learning 
 
 
 ## 🌐 Socials:
