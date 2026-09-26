@@ -118,7 +118,7 @@ jobs:
 
       # ── 3D contribution graph ─────────────────────────────────────
       - name: 3D contributions
-        uses: yoshi389111/github-profile-3d-contrib@0.9.3
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
