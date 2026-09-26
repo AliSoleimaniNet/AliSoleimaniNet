@@ -40,12 +40,6 @@ jobs:
           config_display: large
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
-          plugin_languages: yes
-          plugin_languages_ignored: java, gap, systemverilog, html, css, jupyter notebook, tex, makefile, dockerfile, shell, batchfile, qmake, xtend
-          plugin_languages_skipped: QuizDSL-Studio, HW3NLP, iDASH2018_Docker, MatrixMultiplyMR, BDHW5-Lakehouse
-          plugin_languages_limit: 8
-          plugin_languages_sections: most-used
-          config_order: base.header, base.activity, base.community, base.repositories, isocalendar, languages
 
       # ── lowlighter/metrics: habits ─────────────────────────────────
       - name: Metrics · habits
@@ -114,6 +108,13 @@ jobs:
           cp profile-3d-contrib/profile-green-animate.svg dist/3d/ 2>/dev/null || true
           cp profile-3d-contrib/profile-night-rainbow.svg dist/3d/ 2>/dev/null || true
           echo "--- dist ---"; find dist -type f
+
+      - name: Languages card
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          EXTRA_REPOS: ${{ secrets.EXTRA_REPOS }}
+        run: node scripts/languages-card.mjs dist/metrics
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v5

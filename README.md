@@ -191,9 +191,17 @@ A reference architecture, not any one product: one gateway in front, services th
   <img alt="GitHub overview" src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/metrics/overview.svg">
 </p>
 
-<p align="center">
-  <img alt="Coding habits" src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/metrics/habits.svg">
-</p>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/metrics/languages-dark.svg">
+        <img alt="Most used languages" src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/metrics/languages-light.svg" width="100%">
+      </picture>
+    </td>
+    <td width="50%" valign="top"><img alt="Coding habits" src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/metrics/habits.svg" width="100%"></td>
+  </tr>
+</table>
 
 <p align="center">
   <img alt="Streak" src="https://streak-stats.demolab.com/?user=AliSoleimaniNet&theme=dark&hide_border=true&background=0e1219&ring=22d3ee&fire=22d3ee&currStreakLabel=22d3ee&sideLabels=8b93a3&dates=8b93a3&currStreakNum=e6e9ef&sideNums=e6e9ef">
