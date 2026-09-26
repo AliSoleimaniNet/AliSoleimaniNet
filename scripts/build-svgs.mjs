@@ -122,17 +122,17 @@ const CARDS = [
   {
     id: 'helpsy', kicker: 'TECH LEAD · PRODUCTION', title: 'Helpsy', sub: 'Mental-health clinic & therapy platform · helpsy.ir',
     lines: [
-      '8 .NET 9 microservices behind a YARP gateway · gRPC · MassTransit/RabbitMQ outbox',
-      'PostgreSQL · Redis · Hangfire · multi-tenant sub-domains · payments & settlement',
-      'Next.js + React panels · GitLab CI · Docker · Grafana observability',
+      'Multi-tenant platform for clinics, therapists and organizations',
+      'Booking, online payments, psychology tests, ticketing and SMS notifications',
+      'I lead the .NET backend, the frontend team and the delivery pipeline',
     ],
-    tags: ['.NET 9', 'gRPC', 'RabbitMQ', 'PostgreSQL', 'Redis', 'YARP', 'Next.js'],
+    tags: ['.NET', 'gRPC', 'RabbitMQ', 'PostgreSQL', 'Redis', 'Docker', 'Next.js'],
   },
   {
     id: 'kiosk', kicker: 'OWNER · PRODUCTION', title: 'Kiosk Management', sub: 'Self-service payment kiosks for a public-sector client',
     lines: [
-      'Bank PC-POS terminals (Sadad, FanAva) + thermal receipt printers',
-      'Offline-first kiosks: SQLite store-and-forward, sync workers, fleet auto-update',
+      'Bank POS terminal and receipt-printer integration',
+      'Offline-first kiosk agent: store-and-forward sync and fleet auto-update',
       'Dozens of kiosks · thousands of transactions a day · years in production',
     ],
     tags: ['.NET 8', 'Clean Architecture', 'CQRS', 'PostgreSQL', 'SQLite', 'Docker'],
@@ -140,20 +140,20 @@ const CARDS = [
   {
     id: 'kiosell', kicker: 'OWNER · IN PROGRESS', title: 'KioSell', sub: 'Multi-tenant commerce & reservation SaaS',
     lines: [
-      '.NET 10 modular monolith · OpenIddict auth server · Postgres row-level security',
-      'Redpanda/Kafka outbox-inbox · Redis · MinIO · OpenTelemetry · Testcontainers',
-      'Go gRPC gateways · Next.js monorepo (eShop, tenant admin, platform console)',
+      '.NET 10 modular monolith with a dedicated auth server and tenant data isolation',
+      'Event-driven messaging with outbox/inbox · OpenTelemetry · container-based tests',
+      'Go gRPC gateways · Next.js monorepo (shop, tenant admin, platform console)',
     ],
     tags: ['.NET 10', 'OpenIddict', 'Kafka', 'Go', 'OTel', 'Next.js'],
   },
   {
-    id: 'iam', kicker: 'GO · CONFIDENTIAL', title: 'Healthcare IAM Platform', sub: 'Identity & access platform for a healthcare company',
+    id: 'iam', kicker: 'GO · PRODUCTION', title: 'Barnabus IAM', sub: 'Identity & access platform · barnabus.ai',
     lines: [
-      '6 Go services: gateway · auth · session · token/JWKS · policy decision point · admin',
-      'SSO · MFA & step-up · mutual-TLS channels · key rotation · tenant lifecycle',
-      'PostgreSQL · Redis · OpenTelemetry · Prometheus · single sign-on across 4 products',
+      'Go identity provider: single sign-on, MFA and OAuth2 / OIDC flows',
+      'Multi-tenant, audited, instrumented with OpenTelemetry and Prometheus',
+      'Signs users into the Barnabus healthcare product family',
     ],
-    tags: ['Go', 'OAuth2 / OIDC', 'JWKS', 'mTLS', 'PostgreSQL', 'OTel'],
+    tags: ['Go', 'OAuth2 / OIDC', 'PostgreSQL', 'Redis', 'OTel'],
   },
 ];
 
@@ -188,9 +188,53 @@ ${lines}${tags}
 </svg>`;
 }
 
+
+// ── Architecture diagram (Helpsy topology) ────────────────────────────────
+function architecture(t) {
+  const W = 1200, H = 560;
+  const box = (x, y, w, h, title, sub, accent = false) =>
+    `<g transform="translate(${x},${y})"><rect width="${w}" height="${h}" rx="10" fill="${t.card}" stroke="${accent ? t.accent : t.cardBorder}" stroke-opacity="${accent ? .7 : 1}"/>` +
+    (accent ? `<rect width="${w}" height="${h}" rx="10" fill="${t.accent}" fill-opacity=".06"/>` : '') +
+    `<text x="${w / 2}" y="${sub ? h / 2 - 3 : h / 2 + 5}" text-anchor="middle" font-family="${FONT}" font-size="13.5" font-weight="700" fill="${t.text}">${esc(title)}</text>` +
+    (sub ? `<text x="${w / 2}" y="${h / 2 + 14}" text-anchor="middle" font-family="${MONO}" font-size="10.5" fill="${t.muted}">${esc(sub)}</text>` : '') + `</g>`;
+  const clients = ['Web app', 'Admin panel', 'Mobile / kiosk', 'Partner API'];
+  const services = ['Identity', 'Catalog', 'Booking', 'Billing', 'Notifications', 'Reporting'];
+  const infra = [['PostgreSQL', 'one database per service'], ['Redis', 'cache · sessions · limits'], ['Message broker', 'transactional outbox'], ['Job scheduler', 'retries · reminders'], ['Observability', 'traces · metrics · logs'], ['CI/CD', 'containers · pipelines']];
+  let s = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Reference architecture">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${t.bg0}"/><stop offset="1" stop-color="${t.bg1}"/></linearGradient>
+<pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="${t.line}" stroke-width="1"/></pattern></defs>
+<rect width="${W}" height="${H}" rx="16" fill="url(#bg)"/><rect width="${W}" height="${H}" rx="16" fill="url(#grid)"/>
+<text x="32" y="36" font-family="${MONO}" font-size="12" letter-spacing="2" fill="${t.accent}">REFERENCE ARCHITECTURE · HOW I BUILD BACKENDS</text>
+<text x="${W - 32}" y="36" text-anchor="end" font-family="${MONO}" font-size="11" fill="${t.muted}">gateway in front · services behind · outbox everywhere</text>`;
+  const paths = [];
+  // clients row
+  const cw = 200, cy = 62, cgap = (W - 64 - clients.length * cw) / (clients.length - 1);
+  clients.forEach((c, i) => { const x = 32 + i * (cw + cgap); s += box(x, cy, cw, 44, c); paths.push(`M${x + cw / 2},${cy + 44} C${x + cw / 2},${cy + 80} ${W / 2},${cy + 60} ${W / 2},${cy + 104}`); });
+  // gateway
+  const gw = 520, gx = (W - gw) / 2, gy = 166;
+  s += box(gx, gy, gw, 56, 'API Gateway', 'authentication · rate limiting · routing · fail-closed', true);
+  // services row
+  const sw = 128, sy = 296, sgap = (W - 64 - services.length * sw) / (services.length - 1);
+  services.forEach((svc, i) => { const x = 32 + i * (sw + sgap); s += box(x, sy, sw, 46, svc, 'gRPC · REST'); paths.push(`M${W / 2},${gy + 56} C${W / 2},${gy + 100} ${x + sw / 2},${sy - 40} ${x + sw / 2},${sy}`); });
+  // infra row
+  const iw = 172, iy = 430, igap = (W - 64 - infra.length * iw) / (infra.length - 1);
+  infra.forEach(([n, sub], i) => { const x = 32 + i * (iw + igap); s += box(x, iy, iw, 52, n, sub); });
+  // service → infra links (a representative fan-out)
+  const link = (si, ii) => { const sx = 32 + si * (sw + sgap) + sw / 2, ix = 32 + ii * (iw + igap) + iw / 2; paths.push(`M${sx},${sy + 46} C${sx},${sy + 90} ${ix},${iy - 50} ${ix},${iy}`); };
+  [[0, 0], [0, 1], [1, 0], [2, 0], [2, 2], [2, 3], [3, 0], [3, 2], [4, 2], [4, 3], [5, 0], [5, 4], [1, 4], [3, 4]].forEach(([a, b]) => link(a, b));
+  paths.forEach((d, i) => {
+    s += `<path id="ap${i}" d="${d}" fill="none" stroke="${t.edge}" stroke-width="1.2"/>`;
+    const dur = (2.2 + (i * 0.41) % 2.4).toFixed(2), begin = ((i * 0.37) % 3).toFixed(2);
+    s += `<circle r="2.4" fill="${t.accent}"><animateMotion dur="${dur}s" begin="${begin}s" repeatCount="indefinite"><mpath href="#ap${i}"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="${dur}s" begin="${begin}s" repeatCount="indefinite"/></circle>`;
+  });
+  s += `<text x="32" y="${H - 18}" font-family="${MONO}" font-size="10.5" fill="${t.muted}">the shape I reach for: requests enter through one gateway, services own their data, every cross-service side effect goes through the outbox</text></svg>`;
+  return s;
+}
+
 mkdirSync(join(root, 'assets/cards'), { recursive: true });
 for (const [name, t] of Object.entries(themes)) {
   writeFileSync(join(root, `assets/header-${name}.svg`), header(t));
+  writeFileSync(join(root, `assets/reference-architecture-${name}.svg`), architecture(t));
   for (const c of CARDS) writeFileSync(join(root, `assets/cards/${c.id}-${name}.svg`), card(t, c));
 }
 console.log('svgs written');

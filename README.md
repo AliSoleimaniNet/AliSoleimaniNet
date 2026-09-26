@@ -14,11 +14,11 @@
 
 ## Hi, I'm Ali 👋
 
-**Backend .NET Tech Lead at [Helpsy](https://helpsy.ir)**, where I lead the engineering behind a mental-health clinic platform: a fleet of ASP.NET Core microservices, an API gateway, event-driven messaging, and the CI/CD and observability that keep it honest.
+**Backend .NET Tech Lead at [Helpsy](https://helpsy.ir)**, where I lead the engineering behind a mental-health clinic platform: the .NET backend, the frontend team and the delivery pipeline that ships it.
 
-- 🏗️ I design and run **distributed .NET systems**: gRPC, MassTransit/RabbitMQ with transactional outboxes, PostgreSQL, Redis, YARP, Hangfire, Docker, GitLab CI.
-- 🐹 I write **Go** too: most recently a six-service identity & access platform (SSO, MFA, JWKS, policy decision point, mutual TLS) for a healthcare company.
-- 🧾 I built and still operate a **self-service payment kiosk** network: bank PC-POS terminals, thermal printers and offline-first sync, processing thousands of transactions a day.
+- 🏗️ I design and run **distributed .NET systems**: microservices, gRPC, message-driven integration with transactional outboxes, PostgreSQL, Redis, Docker and CI/CD.
+- 🐹 I write **Go** too: I built the identity and access platform (SSO, MFA, OAuth2/OIDC) behind the [Barnabus](https://barnabus.ai) healthcare products.
+- 🧾 I built and still operate a **self-service payment kiosk** network: bank POS terminals, receipt printers and offline-first sync, processing thousands of transactions a day.
 - 🎓 M.Sc. Software Engineering student at the University of Isfahan · 📍 Isfahan, Iran
 - 💬 Ask me about clean architecture, CQRS, multi-tenancy, payment integrations and developer tooling.
 
@@ -37,7 +37,7 @@
     <td width="50%">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="assets/cards/iam-dark.svg">
-        <img alt="Healthcare IAM platform (Go)" src="assets/cards/iam-light.svg" width="100%">
+        <img alt="Barnabus IAM" src="assets/cards/iam-light.svg" width="100%">
       </picture>
     </td>
   </tr>
@@ -58,6 +58,44 @@
 </table>
 
 <sub>Most of my day-to-day work lives in private GitLab and GitHub organizations, so the public stats below undercount it.</sub>
+
+<br>
+
+## The shape I reach for
+
+A reference architecture, not any one product: one gateway in front, services that own their data behind it, and every cross-service side effect through a transactional outbox.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/reference-architecture-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/reference-architecture-light.svg">
+  <img alt="Reference architecture: clients, API gateway, independent services, and a PostgreSQL, Redis, message broker, job scheduler, observability and CI/CD layer" src="assets/reference-architecture-dark.svg" width="100%">
+</picture>
+
+<br>
+
+## How I work
+
+| | |
+|---|---|
+| **Boring infrastructure, interesting products** | PostgreSQL, Redis and a message broker cover most problems. Novelty goes into the domain, not the plumbing. |
+| **Outbox or it did not happen** | Every cross-service side effect goes through a transactional outbox with retries and a dead-letter queue. |
+| **Fail closed at the edge** | The gateway authenticates, rate-limits and denies by default. Services trust the gateway, never the client. |
+| **Measure before tuning** | Traces and dashboards first; I only optimise what a p99 proves is slow. |
+| **Docs are part of the code** | Architecture decisions, runbooks and team commands live in the repo, next to the code they describe. |
+| **Offline is a feature** | Kiosks and flaky networks taught me store-and-forward, idempotency keys and reconciliation jobs. |
+
+<br>
+
+## Experience
+
+| Period | Role | Where |
+|---|---|---|
+| Aug 2024 — now | **Senior Backend Engineer & Tech Lead** · .NET microservices, frontend team, CI/CD and infrastructure | [Helpsy](https://helpsy.ir) |
+| 2026 | **Go Engineer** · identity & access platform: SSO, MFA, OAuth2/OIDC | [Barnabus](https://barnabus.ai) |
+| Oct 2023 — Apr 2024 | **Full-Stack Developer** · logistics and freight platform in .NET | Bar1 |
+| 2022 — 2023 | **Teaching Assistant** · computer engineering courses | University of Isfahan |
+
+🎓 **M.Sc. Software Engineering** (2025 — present) · **B.Sc. Computer Engineering** (2020 — 2024) · University of Isfahan
 
 <br>
 
@@ -179,6 +217,15 @@
 ### Latest
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
+
+<br>
+
+## Now
+
+- 🔭 Shipping and scaling the Helpsy platform, and growing the team around it.
+- 🧪 Building **KioSell**, a multi-tenant commerce and reservation SaaS on .NET 10, Kafka and Go.
+- 📚 Second year of my M.Sc.: distributed data systems, NLP and model-driven engineering coursework.
+- 🛠️ Exploring .NET Aspire, OpenTelemetry-first services and local LLM tooling.
 
 <br>
 
