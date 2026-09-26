@@ -128,9 +128,11 @@ jobs:
       # ── Collect everything into dist/ ─────────────────────────────
       - name: Collect
         run: |
+          # snk runs in Docker and creates dist/ as root; take ownership first
+          sudo chown -R "$(id -u):$(id -g)" dist /metrics_renders 2>/dev/null || true
           mkdir -p dist/metrics dist/3d dist/snake
           echo "--- metrics renders ---"; ls -R /metrics_renders 2>/dev/null || true
-          cp /metrics_renders/metrics/*.svg dist/metrics/ 2>/dev/null || cp /metrics_renders/*.svg dist/metrics/ 2>/dev/null || true
+          find /metrics_renders -name '*.svg' -exec cp {} dist/metrics/ \; 2>/dev/null || true
           echo "--- 3d ---"; ls profile-3d-contrib 2>/dev/null || true
           cp profile-3d-contrib/profile-night-green.svg   dist/3d/ 2>/dev/null || true
           cp profile-3d-contrib/profile-green-animate.svg dist/3d/ 2>/dev/null || true
