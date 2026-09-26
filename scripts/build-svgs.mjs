@@ -80,9 +80,9 @@ function header(t) {
       `<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="${kt}" dur="${total}s" begin="${i * roleDur}s" repeatCount="indefinite"/></text>`;
   }).join('');
   const typedW = Math.round(TYPED.length * 9.65);
-  const chips = [
-    ['Tech Lead @ Helpsy', 0], ['.NET · Go', 150], ['M.Sc. SE · University of Isfahan', 236], ['Isfahan, IR', 470],
-  ].map(([l, x]) => chip(t, x, l)).join('');
+  let cx = 0;
+  const chips = ['Tech Lead @ Helpsy', '.NET · Go', 'M.Sc. SE · University of Isfahan', 'Isfahan, IR']
+    .map((l) => { const s = chip(t, cx, l); cx += Math.round(l.length * 7.2 + 22) + 10; return s; }).join('');
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Ali Soleimani, ${ROLES[0]}">
 <defs>
