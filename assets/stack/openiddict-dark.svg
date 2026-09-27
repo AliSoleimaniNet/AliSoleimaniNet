@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="44" viewBox="0 0 140 44" role="img" aria-label="OpenIddict">
+<rect x=".5" y=".5" width="139" height="43" rx="12" fill="#0e1219" stroke="rgba(255,255,255,0.10)"/>
+<rect x="12" y="10" width="24" height="24" rx="6" fill="#22d3ee" opacity=".9"/><text x="24" y="27" text-anchor="middle" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="11" font-weight="700" fill="#041014">OI</text>
+<text x="46" y="27" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6e9ef" text-anchor="start" textLength="76.5" lengthAdjust="spacingAndGlyphs" >OpenIddict</text>
+</svg>

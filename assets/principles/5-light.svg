@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="150" viewBox="0 0 600 150" role="img" aria-label="Docs are part of the code">
+<defs><linearGradient id="rail" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0891b2"/><stop offset="1" stop-color="#7c3aed"/></linearGradient><radialGradient id="glow" cx="1" cy="0" r="1"><stop offset="0" stop-color="#0891b2" stop-opacity=".16"/><stop offset=".6" stop-color="#0891b2" stop-opacity="0"/></radialGradient><clipPath id="clip"><rect x=".5" y=".5" width="599" height="149" rx="14"/></clipPath></defs><rect x=".5" y=".5" width="599" height="149" rx="14" fill="#ffffff" stroke="rgba(15,23,42,0.12)"/><rect x=".5" y=".5" width="599" height="149" rx="14" fill="url(#glow)"/>
+<text x="576" y="64" text-anchor="end" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="64" font-weight="800" fill="#0891b2" opacity=".10">05</text>
+<text x="26" y="48" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#0f172a">Docs are part of the code</text>
+<rect x="26" y="62" width="36" height="2" rx="1" fill="#0891b2"/>
+<text x="26" y="96" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#526077">Decisions, runbooks and team commands live in</text>
+<text x="26" y="120" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#526077">the repo, next to the code they describe.</text>
+</svg>

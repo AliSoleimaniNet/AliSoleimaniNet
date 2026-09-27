@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="198" height="38" viewBox="0 0 198 38" role="img" aria-label="Go IAM @ Barnabus">
+<rect x=".5" y=".5" width="197" height="37" rx="19" fill="#ffffff" stroke="rgba(8,145,178,0.35)"/>
+<rect x=".5" y=".5" width="197" height="37" rx="19" fill="rgba(8,145,178,0.08)"/>
+<g transform="translate(14,10) scale(0.75)" fill="none" stroke="#0891b2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="m10.8 12.2 8.2-8.2M17 6l2 2M15 8l2 2"/></g>
+<text x="40" y="24" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start" textLength="135.8" lengthAdjust="spacingAndGlyphs" >Go IAM @ Barnabus</text>
+<g transform="translate(178,14) scale(0.4166666666666667)" fill="none" stroke="#526077" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></g>
+</svg>

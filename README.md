@@ -1,249 +1,172 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img alt="Ali Soleimani — Backend .NET Tech Lead & Go Engineer" src="assets/header-dark.svg" width="100%">
-</picture>
+<a href="https://alisoleimaninet.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg"><img src="assets/header-dark.svg" alt="Ali Soleimani — Backend .NET Tech Lead &amp; Go Engineer" width="100%"></picture></a>
 
 <p align="center">
-  <a href="https://alisoleimaninet.github.io"><img alt="Portfolio" src="https://img.shields.io/badge/alisoleimaninet.github.io-portfolio-22d3ee?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0e1219"></a>
-  <a href="https://www.linkedin.com/in/ali-soleimani-net/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-ali--soleimani--net-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0e1219"></a>
-  <a href="mailto:AliSoleimaniWorks@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-AliSoleimaniWorks%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0e1219"></a>
+<a href="https://helpsy.ir"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pills/helpsy-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/pills/helpsy-light.svg"><img src="assets/pills/helpsy-dark.svg" alt="Tech Lead @ Helpsy" height="38"></picture></a>
+<a href="https://barnabus.ai"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pills/barnabus-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/pills/barnabus-light.svg"><img src="assets/pills/barnabus-dark.svg" alt="Go IAM @ Barnabus" height="38"></picture></a>
+<a href="https://alisoleimaninet.github.io/#stack"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pills/stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/pills/stack-light.svg"><img src="assets/pills/stack-dark.svg" alt=".NET · Go · Distributed systems" height="38"></picture></a>
+<a href="https://www.linkedin.com/in/ali-soleimani-net/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pills/msc-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/pills/msc-light.svg"><img src="assets/pills/msc-dark.svg" alt="M.Sc. SE · University of Isfahan" height="38"></picture></a>
+<a href="https://alisoleimaninet.github.io/#contact"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pills/location-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/pills/location-light.svg"><img src="assets/pills/location-dark.svg" alt="Isfahan, Iran · open to remote" height="38"></picture></a>
+</p>
+
+<p align="center">
+<a href="https://alisoleimaninet.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/buttons/portfolio-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/buttons/portfolio-light.svg"><img src="assets/buttons/portfolio-dark.svg" alt="Portfolio: alisoleimaninet.github.io" height="56"></picture></a>
+<a href="https://www.linkedin.com/in/ali-soleimani-net/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/buttons/linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/buttons/linkedin-light.svg"><img src="assets/buttons/linkedin-dark.svg" alt="LinkedIn: ali-soleimani-net" height="56"></picture></a>
+<a href="mailto:AliSoleimaniWorks@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/buttons/email-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/buttons/email-light.svg"><img src="assets/buttons/email-dark.svg" alt="Email: AliSoleimaniWorks@gmail.com" height="56"></picture></a>
 </p>
 
 <br>
 
-## Hi, I'm Ali 👋
+<a href="https://alisoleimaninet.github.io/#about"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/about-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/sections/about-light.svg"><img src="assets/sections/about-dark.svg" alt="01 About" width="100%"></picture></a>
 
-**Backend .NET Tech Lead at [Helpsy](https://helpsy.ir)**, where I lead the engineering behind a mental-health clinic platform: the .NET backend, the frontend team and the delivery pipeline that ships it.
+I lead the engineering behind **[Helpsy](https://helpsy.ir)**, a mental-health clinic platform: the .NET backend, the frontend team and the delivery pipeline that ships it. I also write **Go**, and built the identity and access platform behind **[Barnabus](https://barnabus.ai)**. Before that I built, and still operate, a self-service payment kiosk network that handles thousands of payments a day.
 
-- 🏗️ I design and run **distributed .NET systems**: microservices, gRPC, message-driven integration with transactional outboxes, PostgreSQL, Redis, Docker and CI/CD.
-- 🐹 I write **Go** too: I built the identity and access platform (SSO, MFA, OAuth2/OIDC) behind the [Barnabus](https://barnabus.ai) healthcare products.
-- 🧾 I built and still operate a **self-service payment kiosk** network: bank POS terminals, receipt printers and offline-first sync, processing thousands of transactions a day.
-- 🎓 M.Sc. Software Engineering student at the University of Isfahan · 📍 Isfahan, Iran
-- 💬 Ask me about clean architecture, CQRS, multi-tenancy, payment integrations and developer tooling.
+I like the hard parts: distributed systems, identity, payments and the infrastructure that keeps them honest. I am a graduate student in Software Engineering at the University of Isfahan, and I care about clean architecture, developer tooling and documentation people actually read.
 
 <br>
 
-## What I'm building
-
-<table>
-  <tr>
-    <td width="50%">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="assets/cards/helpsy-dark.svg">
-        <img alt="Helpsy" src="assets/cards/helpsy-light.svg" width="100%">
-      </picture>
-    </td>
-    <td width="50%">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="assets/cards/iam-dark.svg">
-        <img alt="Barnabus IAM" src="assets/cards/iam-light.svg" width="100%">
-      </picture>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="assets/cards/kiosk-dark.svg">
-        <img alt="Kiosk Management" src="assets/cards/kiosk-light.svg" width="100%">
-      </picture>
-    </td>
-    <td width="50%">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="assets/cards/kiosell-dark.svg">
-        <img alt="KioSell" src="assets/cards/kiosell-light.svg" width="100%">
-      </picture>
-    </td>
-  </tr>
-</table>
-
-<sub>Most of my day-to-day work lives in private GitLab and GitHub organizations, so the public stats below undercount it.</sub>
-
-<br>
-
-## The shape I reach for
-
-A reference architecture, not any one product: one gateway in front, services that own their data behind it, and every cross-service side effect through a transactional outbox.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/reference-architecture-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/reference-architecture-light.svg">
-  <img alt="Reference architecture: clients, API gateway, independent services, and a PostgreSQL, Redis, message broker, job scheduler, observability and CI/CD layer" src="assets/reference-architecture-dark.svg" width="100%">
-</picture>
-
-<br>
-
-## How I work
-
-| | |
-|---|---|
-| **Boring infrastructure, interesting products** | PostgreSQL, Redis and a message broker cover most problems. Novelty goes into the domain, not the plumbing. |
-| **Outbox or it did not happen** | Every cross-service side effect goes through a transactional outbox with retries and a dead-letter queue. |
-| **Fail closed at the edge** | The gateway authenticates, rate-limits and denies by default. Services trust the gateway, never the client. |
-| **Measure before tuning** | Traces and dashboards first; I only optimise what a p99 proves is slow. |
-| **Docs are part of the code** | Architecture decisions, runbooks and team commands live in the repo, next to the code they describe. |
-| **Offline is a feature** | Kiosks and flaky networks taught me store-and-forward, idempotency keys and reconciliation jobs. |
-
-<br>
-
-## Experience
-
-| Period | Role | Where |
-|---|---|---|
-| Aug 2024 — now | **Senior Backend Engineer & Tech Lead** · .NET microservices, frontend team, CI/CD and infrastructure | [Helpsy](https://helpsy.ir) |
-| 2026 | **Go Engineer** · identity & access platform: SSO, MFA, OAuth2/OIDC | [Barnabus](https://barnabus.ai) |
-| Oct 2023 — Apr 2024 | **Full-Stack Developer** · logistics and freight platform in .NET | Bar1 |
-| 2022 — 2023 | **Teaching Assistant** · computer engineering courses | University of Isfahan |
-
-🎓 **M.Sc. Software Engineering** (2025 — present) · **B.Sc. Computer Engineering** (2020 — 2024) · University of Isfahan
-
-<br>
-
-## Featured open source
+<a href="https://alisoleimaninet.github.io/#projects"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/building-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/sections/building-light.svg"><img src="assets/sections/building-dark.svg" alt="02 What I am building" width="100%"></picture></a>
 
 <p align="center">
-  <img alt="Featured repositories" src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/metrics/repos.svg">
+<a href="https://alisoleimaninet.github.io/#project-helpsy"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/helpsy-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/projects/helpsy-light.svg"><img src="assets/projects/helpsy-dark.svg" alt="Helpsy" width="49%"></picture></a>
+<a href="https://alisoleimaninet.github.io/#project-barnabus"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/barnabus-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/projects/barnabus-light.svg"><img src="assets/projects/barnabus-dark.svg" alt="Barnabus IAM" width="49%"></picture></a>
+<a href="https://alisoleimaninet.github.io/#project-kiosk"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/kiosk-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/projects/kiosk-light.svg"><img src="assets/projects/kiosk-dark.svg" alt="Kiosk Management" width="49%"></picture></a>
+<a href="https://alisoleimaninet.github.io/#project-kiosell"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/kiosell-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/projects/kiosell-light.svg"><img src="assets/projects/kiosell-dark.svg" alt="KioSell" width="49%"></picture></a>
 </p>
-
-| Repo | What it is |
-|---|---|
-| [Uber-Data-Intelligence-Platform](https://github.com/AliSoleimaniNet/Uber-Data-Intelligence-Platform) | End-to-end data platform on **.NET Aspire**: medallion lakehouse on PostgreSQL, Qdrant semantic search, a local LLM via Ollama, React + Tailwind front end |
-| [QuizDSL-Studio](https://github.com/AliSoleimaniNet/QuizDSL-Studio) | LLM-assisted model-driven development: an **Xtext** DSL + a .NET 10 service that turn prompts into models and generated apps |
-| [ProxyChainer](https://github.com/AliSoleimaniNet/ProxyChainer) | Xray-core config builder that chains VLESS traffic through SOCKS proxies, built with Flet |
-| [ExpressFinder](https://github.com/AliSoleimaniNet/ExpressFinder) | Windows tool that automates the ExpressVPN CLI to find and connect to working locations |
-| [TSP-Bokeh-Genetic-PSO-AntColony](https://github.com/AliSoleimaniNet/TSP-Bokeh-Genetic-PSO-AntColony) | TSP solved with genetic, particle-swarm and ant-colony metaheuristics, visualised with Bokeh |
-| [ShamsiDate](https://github.com/AliSoleimaniNet/ShamsiDate) · [Chess](https://github.com/AliSoleimaniNet/Chess) | Persian calendar events library · WinForms chess with online play and chat |
 
 <br>
 
-## Tech stack
+<a href="https://github.com/AliSoleimaniNet?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/opensource-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/sections/opensource-light.svg"><img src="assets/sections/opensource-dark.svg" alt="03 Open source" width="100%"></picture></a>
 
-<table>
-  <tr>
-    <th align="left">Backend</th>
-    <td>
-      <img src="assets/icons/csharp.svg" width="40" height="40" alt="C#" title="C#">&nbsp;
-      <img src="assets/icons/dot-net.svg" width="40" height="40" alt=".NET" title=".NET 9 / 10">&nbsp;
-      <img src="assets/icons/dotnetcore.svg" width="40" height="40" alt="ASP.NET Core" title="ASP.NET Core">&nbsp;
-      <img src="assets/icons/go.svg" width="40" height="40" alt="Go" title="Go">&nbsp;
-      <img src="assets/icons/grpc.svg" width="40" height="40" alt="gRPC" title="gRPC">&nbsp;
-      <img src="assets/icons/python.svg" width="40" height="40" alt="Python" title="Python">&nbsp;
-      <img src="assets/icons/cplusplus.svg" width="40" height="40" alt="C++" title="C++">
-      <br>
-      <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="EF Core">
-      <img src="https://img.shields.io/badge/Dapper-1E1E1E?style=flat-square" alt="Dapper">
-      <img src="https://img.shields.io/badge/MediatR%20%2F%20CQRS-0B8A9E?style=flat-square" alt="MediatR / CQRS">
-      <img src="https://img.shields.io/badge/MassTransit-2D9CDB?style=flat-square" alt="MassTransit">
-      <img src="https://img.shields.io/badge/YARP-512BD4?style=flat-square" alt="YARP">
-      <img src="https://img.shields.io/badge/Hangfire-1E3A5F?style=flat-square" alt="Hangfire">
-      <img src="https://img.shields.io/badge/OpenIddict-1F6FEB?style=flat-square" alt="OpenIddict">
-    </td>
-  </tr>
-  <tr>
-    <th align="left">Data &amp; messaging</th>
-    <td>
-      <img src="assets/icons/postgresql.svg" width="40" height="40" alt="PostgreSQL" title="PostgreSQL">&nbsp;
-      <img src="assets/icons/microsoftsqlserver.svg" width="40" height="40" alt="SQL Server" title="SQL Server">&nbsp;
-      <img src="assets/icons/sqlite.svg" width="40" height="40" alt="SQLite" title="SQLite">&nbsp;
-      <img src="assets/icons/redis.svg" width="40" height="40" alt="Redis" title="Redis">&nbsp;
-      <img src="assets/icons/rabbitmq.svg" width="40" height="40" alt="RabbitMQ" title="RabbitMQ">&nbsp;
-      <img src="assets/icons/apachekafka.svg" width="40" height="40" alt="Kafka" title="Kafka / Redpanda">&nbsp;
-      <img src="assets/icons/minio.svg" width="40" height="40" alt="MinIO" title="MinIO">&nbsp;
-      <img src="assets/icons/qdrant.svg" width="40" height="40" alt="Qdrant" title="Qdrant">
-    </td>
-  </tr>
-  <tr>
-    <th align="left">Infra &amp; observability</th>
-    <td>
-      <img src="assets/icons/docker.svg" width="40" height="40" alt="Docker" title="Docker">&nbsp;
-      <img src="assets/icons/kubernetes.svg" width="40" height="40" alt="Kubernetes" title="Kubernetes">&nbsp;
-      <img src="assets/icons/nginx.svg" width="40" height="40" alt="nginx" title="nginx">&nbsp;
-      <img src="assets/icons/linux.svg" width="40" height="40" alt="Linux" title="Linux">&nbsp;
-      <img src="assets/icons/gitlab.svg" width="40" height="40" alt="GitLab CI" title="GitLab CI">&nbsp;
-      <img src="assets/icons/githubactions.svg" width="40" height="40" alt="GitHub Actions" title="GitHub Actions">&nbsp;
-      <img src="assets/icons/grafana.svg" width="40" height="40" alt="Grafana" title="Grafana">&nbsp;
-      <img src="assets/icons/prometheus.svg" width="40" height="40" alt="Prometheus" title="Prometheus">&nbsp;
-      <img src="assets/icons/opentelemetry.svg" width="40" height="40" alt="OpenTelemetry" title="OpenTelemetry">
-      <br>
-      <img src="https://img.shields.io/badge/Testcontainers-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Testcontainers">
-      <img src="https://img.shields.io/badge/Docker%20Compose-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker Compose">
-    </td>
-  </tr>
-  <tr>
-    <th align="left">Frontend &amp; tooling</th>
-    <td>
-      <img src="assets/icons/typescript.svg" width="40" height="40" alt="TypeScript" title="TypeScript">&nbsp;
-      <img src="assets/icons/nextjs.svg" width="40" height="40" alt="Next.js" title="Next.js">&nbsp;
-      <img src="assets/icons/react.svg" width="40" height="40" alt="React" title="React">&nbsp;
-      <img src="assets/icons/tailwindcss.svg" width="40" height="40" alt="Tailwind" title="Tailwind CSS">&nbsp;
-      <img src="assets/icons/threejs.svg" width="40" height="40" alt="Three.js" title="Three.js">&nbsp;
-      <img src="assets/icons/git.svg" width="40" height="40" alt="Git" title="Git">&nbsp;
-      <img src="assets/icons/ollama.svg" width="40" height="40" alt="Ollama" title="Ollama">
-    </td>
-  </tr>
-</table>
+<p align="center">
+<a href="https://github.com/AliSoleimaniNet/Uber-Data-Intelligence-Platform"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/Uber-Data-Intelligence-Platform-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/Uber-Data-Intelligence-Platform-light.svg"><img src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/Uber-Data-Intelligence-Platform-dark.svg" alt="Uber-Data-Intelligence-Platform" width="49%"></picture></a>
+<a href="https://github.com/AliSoleimaniNet/QuizDSL-Studio"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/QuizDSL-Studio-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/QuizDSL-Studio-light.svg"><img src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/QuizDSL-Studio-dark.svg" alt="QuizDSL-Studio" width="49%"></picture></a>
+<a href="https://github.com/AliSoleimaniNet/ProxyChainer"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/ProxyChainer-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/ProxyChainer-light.svg"><img src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/ProxyChainer-dark.svg" alt="ProxyChainer" width="49%"></picture></a>
+<a href="https://github.com/AliSoleimaniNet/ExpressFinder"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/ExpressFinder-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/ExpressFinder-light.svg"><img src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/ExpressFinder-dark.svg" alt="ExpressFinder" width="49%"></picture></a>
+<a href="https://github.com/AliSoleimaniNet/TSP-Bokeh-Genetic-PSO-AntColony"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/TSP-Bokeh-Genetic-PSO-AntColony-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/TSP-Bokeh-Genetic-PSO-AntColony-light.svg"><img src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/TSP-Bokeh-Genetic-PSO-AntColony-dark.svg" alt="TSP-Bokeh-Genetic-PSO-AntColony" width="49%"></picture></a>
+<a href="https://github.com/AliSoleimaniNet/ShamsiDate"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/ShamsiDate-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/ShamsiDate-light.svg"><img src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/repos/ShamsiDate-dark.svg" alt="ShamsiDate" width="49%"></picture></a>
+</p>
 
 <br>
 
-## Activity
+<a href="https://alisoleimaninet.github.io/#architecture"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/architecture-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/sections/architecture-light.svg"><img src="assets/sections/architecture-dark.svg" alt="04 The shape I reach for" width="100%"></picture></a>
+
+<a href="https://alisoleimaninet.github.io/#architecture"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/reference-architecture-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/reference-architecture-light.svg"><img src="assets/reference-architecture-dark.svg" alt="Reference architecture: clients, API gateway, independent services, data and platform layer" width="100%"></picture></a>
+
+<br>
+
+<a href="https://alisoleimaninet.github.io/#principles"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/principles-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/sections/principles-light.svg"><img src="assets/sections/principles-dark.svg" alt="05 How I work" width="100%"></picture></a>
 
 <p align="center">
-  <img alt="GitHub overview" src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/metrics/overview.svg">
+<a href="https://alisoleimaninet.github.io/#principles"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/principles/1-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/principles/1-light.svg"><img src="assets/principles/1-dark.svg" alt="Boring infrastructure, interesting products" width="49%"></picture></a>
+<a href="https://alisoleimaninet.github.io/#principles"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/principles/2-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/principles/2-light.svg"><img src="assets/principles/2-dark.svg" alt="Outbox or it did not happen" width="49%"></picture></a>
+<a href="https://alisoleimaninet.github.io/#principles"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/principles/3-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/principles/3-light.svg"><img src="assets/principles/3-dark.svg" alt="Fail closed at the edge" width="49%"></picture></a>
+<a href="https://alisoleimaninet.github.io/#principles"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/principles/4-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/principles/4-light.svg"><img src="assets/principles/4-dark.svg" alt="Measure before tuning" width="49%"></picture></a>
+<a href="https://alisoleimaninet.github.io/#principles"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/principles/5-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/principles/5-light.svg"><img src="assets/principles/5-dark.svg" alt="Docs are part of the code" width="49%"></picture></a>
+<a href="https://alisoleimaninet.github.io/#principles"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/principles/6-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/principles/6-light.svg"><img src="assets/principles/6-dark.svg" alt="Offline is a feature" width="49%"></picture></a>
 </p>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/metrics/languages-dark.svg">
-        <img alt="Most used languages" src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/metrics/languages-light.svg" width="100%">
-      </picture>
-    </td>
-    <td width="50%" valign="top"><img alt="Coding habits" src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/metrics/habits.svg" width="100%"></td>
-  </tr>
-</table>
+<br>
+
+<a href="https://www.linkedin.com/in/ali-soleimani-net/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/experience-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/sections/experience-light.svg"><img src="assets/sections/experience-dark.svg" alt="06 Experience" width="100%"></picture></a>
+
+<a href="https://helpsy.ir"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/experience/helpsy-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/experience/helpsy-light.svg"><img src="assets/experience/helpsy-dark.svg" alt="Senior Backend Engineer &amp; Tech Lead — Helpsy (Aug 2024 — now)" width="100%"></picture></a>
+<a href="https://barnabus.ai"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/experience/barnabus-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/experience/barnabus-light.svg"><img src="assets/experience/barnabus-dark.svg" alt="Go Engineer · Identity &amp; Access — Barnabus (2026)" width="100%"></picture></a>
+<a href="https://www.linkedin.com/in/ali-soleimani-net/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/experience/bar1-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/experience/bar1-light.svg"><img src="assets/experience/bar1-dark.svg" alt="Full-Stack Developer — Bar1 (Oct 2023 — Apr 2024)" width="100%"></picture></a>
+<a href="https://www.linkedin.com/in/ali-soleimani-net/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/experience/ta-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/experience/ta-light.svg"><img src="assets/experience/ta-dark.svg" alt="Teaching Assistant — University of Isfahan (2022 — 2023)" width="100%"></picture></a>
+<a href="https://www.linkedin.com/in/ali-soleimani-net/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/experience/edu-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/experience/edu-light.svg"><img src="assets/experience/edu-dark.svg" alt="B.Sc. Computer Eng. · M.Sc. Software Eng. — University of Isfahan (2020 — now)" width="100%"></picture></a>
+
+<br>
+
+<a href="https://alisoleimaninet.github.io/#stack"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/sections/stack-light.svg"><img src="assets/sections/stack-dark.svg" alt="07 Stack" width="100%"></picture></a>
+
+<p>
+<a href="https://alisoleimaninet.github.io/#stack"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/_backend-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/_backend-light.svg"><img src="assets/stack/_backend-dark.svg" alt="Backend" height="44"></picture></a>
+<a href="https://learn.microsoft.com/dotnet/csharp/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/c--dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/c--light.svg"><img src="assets/stack/c--dark.svg" alt="C#" height="44"></picture></a>
+<a href="https://dotnet.microsoft.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/-net-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/-net-light.svg"><img src="assets/stack/-net-dark.svg" alt=".NET" height="44"></picture></a>
+<a href="https://learn.microsoft.com/aspnet/core/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/asp-net-core-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/asp-net-core-light.svg"><img src="assets/stack/asp-net-core-dark.svg" alt="ASP.NET Core" height="44"></picture></a>
+<a href="https://go.dev/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/go-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/go-light.svg"><img src="assets/stack/go-dark.svg" alt="Go" height="44"></picture></a>
+<a href="https://grpc.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/grpc-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/grpc-light.svg"><img src="assets/stack/grpc-dark.svg" alt="gRPC" height="44"></picture></a>
+<a href="https://learn.microsoft.com/ef/core/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/ef-core-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/ef-core-light.svg"><img src="assets/stack/ef-core-dark.svg" alt="EF Core" height="44"></picture></a>
+<a href="https://github.com/DapperLib/Dapper"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/dapper-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/dapper-light.svg"><img src="assets/stack/dapper-dark.svg" alt="Dapper" height="44"></picture></a>
+<a href="https://github.com/jbogard/MediatR"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/mediatr-cqrs-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/mediatr-cqrs-light.svg"><img src="assets/stack/mediatr-cqrs-dark.svg" alt="MediatR / CQRS" height="44"></picture></a>
+<a href="https://masstransit.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/masstransit-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/masstransit-light.svg"><img src="assets/stack/masstransit-dark.svg" alt="MassTransit" height="44"></picture></a>
+<a href="https://microsoft.github.io/reverse-proxy/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/yarp-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/yarp-light.svg"><img src="assets/stack/yarp-dark.svg" alt="YARP" height="44"></picture></a>
+<a href="https://www.hangfire.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/hangfire-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/hangfire-light.svg"><img src="assets/stack/hangfire-dark.svg" alt="Hangfire" height="44"></picture></a>
+<a href="https://documentation.openiddict.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/openiddict-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/openiddict-light.svg"><img src="assets/stack/openiddict-dark.svg" alt="OpenIddict" height="44"></picture></a>
+<a href="https://www.python.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/python-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/python-light.svg"><img src="assets/stack/python-dark.svg" alt="Python" height="44"></picture></a>
+</p>
+<p>
+<a href="https://alisoleimaninet.github.io/#stack"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/_data-messaging-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/_data-messaging-light.svg"><img src="assets/stack/_data-messaging-dark.svg" alt="Data &amp; messaging" height="44"></picture></a>
+<a href="https://www.postgresql.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/postgresql-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/postgresql-light.svg"><img src="assets/stack/postgresql-dark.svg" alt="PostgreSQL" height="44"></picture></a>
+<a href="https://www.microsoft.com/sql-server"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/sql-server-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/sql-server-light.svg"><img src="assets/stack/sql-server-dark.svg" alt="SQL Server" height="44"></picture></a>
+<a href="https://www.sqlite.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/sqlite-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/sqlite-light.svg"><img src="assets/stack/sqlite-dark.svg" alt="SQLite" height="44"></picture></a>
+<a href="https://redis.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/redis-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/redis-light.svg"><img src="assets/stack/redis-dark.svg" alt="Redis" height="44"></picture></a>
+<a href="https://www.rabbitmq.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/rabbitmq-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/rabbitmq-light.svg"><img src="assets/stack/rabbitmq-dark.svg" alt="RabbitMQ" height="44"></picture></a>
+<a href="https://kafka.apache.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/kafka-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/kafka-light.svg"><img src="assets/stack/kafka-dark.svg" alt="Kafka" height="44"></picture></a>
+<a href="https://min.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/minio-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/minio-light.svg"><img src="assets/stack/minio-dark.svg" alt="MinIO" height="44"></picture></a>
+<a href="https://qdrant.tech/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/qdrant-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/qdrant-light.svg"><img src="assets/stack/qdrant-dark.svg" alt="Qdrant" height="44"></picture></a>
+</p>
+<p>
+<a href="https://alisoleimaninet.github.io/#stack"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/_infra-observability-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/_infra-observability-light.svg"><img src="assets/stack/_infra-observability-dark.svg" alt="Infra &amp; observability" height="44"></picture></a>
+<a href="https://www.docker.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/docker-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/docker-light.svg"><img src="assets/stack/docker-dark.svg" alt="Docker" height="44"></picture></a>
+<a href="https://kubernetes.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/kubernetes-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/kubernetes-light.svg"><img src="assets/stack/kubernetes-dark.svg" alt="Kubernetes" height="44"></picture></a>
+<a href="https://nginx.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/nginx-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/nginx-light.svg"><img src="assets/stack/nginx-dark.svg" alt="nginx" height="44"></picture></a>
+<a href="https://kernel.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/linux-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/linux-light.svg"><img src="assets/stack/linux-dark.svg" alt="Linux" height="44"></picture></a>
+<a href="https://docs.gitlab.com/ci/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/gitlab-ci-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/gitlab-ci-light.svg"><img src="assets/stack/gitlab-ci-dark.svg" alt="GitLab CI" height="44"></picture></a>
+<a href="https://github.com/features/actions"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/github-actions-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/github-actions-light.svg"><img src="assets/stack/github-actions-dark.svg" alt="GitHub Actions" height="44"></picture></a>
+<a href="https://grafana.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/grafana-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/grafana-light.svg"><img src="assets/stack/grafana-dark.svg" alt="Grafana" height="44"></picture></a>
+<a href="https://prometheus.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/prometheus-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/prometheus-light.svg"><img src="assets/stack/prometheus-dark.svg" alt="Prometheus" height="44"></picture></a>
+<a href="https://opentelemetry.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/opentelemetry-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/opentelemetry-light.svg"><img src="assets/stack/opentelemetry-dark.svg" alt="OpenTelemetry" height="44"></picture></a>
+<a href="https://testcontainers.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/testcontainers-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/testcontainers-light.svg"><img src="assets/stack/testcontainers-dark.svg" alt="Testcontainers" height="44"></picture></a>
+</p>
+<p>
+<a href="https://alisoleimaninet.github.io/#stack"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/_frontend-tooling-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/_frontend-tooling-light.svg"><img src="assets/stack/_frontend-tooling-dark.svg" alt="Frontend &amp; tooling" height="44"></picture></a>
+<a href="https://www.typescriptlang.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/typescript-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/typescript-light.svg"><img src="assets/stack/typescript-dark.svg" alt="TypeScript" height="44"></picture></a>
+<a href="https://nextjs.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/next-js-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/next-js-light.svg"><img src="assets/stack/next-js-dark.svg" alt="Next.js" height="44"></picture></a>
+<a href="https://react.dev/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/react-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/react-light.svg"><img src="assets/stack/react-dark.svg" alt="React" height="44"></picture></a>
+<a href="https://tailwindcss.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/tailwind-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/tailwind-light.svg"><img src="assets/stack/tailwind-dark.svg" alt="Tailwind" height="44"></picture></a>
+<a href="https://threejs.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/three-js-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/three-js-light.svg"><img src="assets/stack/three-js-dark.svg" alt="Three.js" height="44"></picture></a>
+<a href="https://git-scm.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/git-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/git-light.svg"><img src="assets/stack/git-dark.svg" alt="Git" height="44"></picture></a>
+<a href="https://ollama.com/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack/ollama-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/stack/ollama-light.svg"><img src="assets/stack/ollama-dark.svg" alt="Ollama" height="44"></picture></a>
+</p>
+
+<br>
+
+<a href="https://github.com/AliSoleimaniNet"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/activity-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/sections/activity-light.svg"><img src="assets/sections/activity-dark.svg" alt="08 Activity" width="100%"></picture></a>
 
 <p align="center">
-  <img alt="Streak" src="https://streak-stats.demolab.com/?user=AliSoleimaniNet&theme=dark&hide_border=true&background=0e1219&ring=22d3ee&fire=22d3ee&currStreakLabel=22d3ee&sideLabels=8b93a3&dates=8b93a3&currStreakNum=e6e9ef&sideNums=e6e9ef">
+<a href="https://github.com/AliSoleimaniNet"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/stats/contributions-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/stats/contributions-light.svg"><img src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/stats/contributions-dark.svg" alt="Contributions in the last year" width="32.5%"></picture></a>
+<a href="https://github.com/AliSoleimaniNet"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/stats/streak-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/stats/streak-light.svg"><img src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/stats/streak-dark.svg" alt="Current and longest streak" width="32.5%"></picture></a>
+<a href="https://github.com/search?q=author%3AAliSoleimaniNet+is%3Apr&type=pullrequests"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/stats/prs-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/stats/prs-light.svg"><img src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/stats/prs-dark.svg" alt="Pull requests" width="32.5%"></picture></a>
 </p>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/3d/profile-night-green.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/3d/profile-green-animate.svg">
-  <img alt="3D contribution graph" src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/3d/profile-night-green.svg" width="100%">
-</picture>
+<p align="center">
+<a href="https://github.com/AliSoleimaniNet?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/metrics/languages-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/metrics/languages-light.svg"><img src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/metrics/languages-dark.svg" alt="Most used languages" width="49%"></picture></a>
+<a href="https://github.com/AliSoleimaniNet?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/stats/overview-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/stats/overview-light.svg"><img src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/stats/overview-dark.svg" alt="Repositories, stars and followers" width="49%"></picture></a>
+</p>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/snake/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/snake/snake-light.svg">
-  <img alt="Contribution snake" src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/snake/snake-dark.svg" width="100%">
-</picture>
+<a href="https://github.com/AliSoleimaniNet"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/3d/profile-night-green.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/3d/profile-green-animate.svg"><img src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/3d/profile-night-green.svg" alt="3D contribution graph" width="100%"></picture></a>
 
-### Latest
+<a href="https://github.com/AliSoleimaniNet"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/snake/snake-dark.svg"><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/snake/snake-light.svg"><img src="https://raw.githubusercontent.com/AliSoleimaniNet/AliSoleimaniNet/output/snake/snake-dark.svg" alt="Contribution snake" width="100%"></picture></a>
+
+#### Latest
 <!--START_SECTION:activity-->
+- 🔒 **207 contributions to private repositories** in the last 30 days · [contribution graph](https://github.com/AliSoleimaniNet)
+- `Sep 26` ⬆️ Pushed [2 commits](https://github.com/AliSoleimaniNet/AliSoleimaniNet.github.io/commit/bbeb7041e695f3622d2ead398c9f32c82a52bcdb) to [AliSoleimaniNet.github.io](https://github.com/AliSoleimaniNet/AliSoleimaniNet.github.io) · <sub>Add architecture, principles, command palette and adaptive quality</sub>
 <!--END_SECTION:activity-->
 
 <br>
 
-## Now
+<a href="https://alisoleimaninet.github.io/#contact"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/contact-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/sections/contact-light.svg"><img src="assets/sections/contact-dark.svg" alt="09 Let us talk" width="100%"></picture></a>
 
-- 🔭 Shipping and scaling the Helpsy platform, and growing the team around it.
-- 🧪 Building **KioSell**, a multi-tenant commerce and reservation SaaS on .NET 10, Kafka and Go.
-- 📚 Second year of my M.Sc.: distributed data systems, NLP and model-driven engineering coursework.
-- 🛠️ Exploring .NET Aspire, OpenTelemetry-first services and local LLM tooling.
-
-<br>
-
-## Let's talk
-
-📫 **[AliSoleimaniWorks@gmail.com](mailto:AliSoleimaniWorks@gmail.com)** · 💼 [LinkedIn](https://www.linkedin.com/in/ali-soleimani-net/) · 🌐 [alisoleimaninet.github.io](https://alisoleimaninet.github.io)
-
-Open to backend, platform and tech-lead roles, .NET and Go consulting, and interesting collaborations.
-
-<br>
+<p align="center">
+<a href="mailto:AliSoleimaniWorks@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact/email-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/contact/email-light.svg"><img src="assets/contact/email-dark.svg" alt="Email: AliSoleimaniWorks@gmail.com" width="32.5%"></picture></a>
+<a href="https://www.linkedin.com/in/ali-soleimani-net/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact/linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/contact/linkedin-light.svg"><img src="assets/contact/linkedin-dark.svg" alt="LinkedIn: in/ali-soleimani-net" width="32.5%"></picture></a>
+<a href="https://alisoleimaninet.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact/site-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/contact/site-light.svg"><img src="assets/contact/site-dark.svg" alt="Portfolio: alisoleimaninet.github.io" width="32.5%"></picture></a>
+</p>
 
 <p align="center">
   <img alt="Profile views" src="https://komarev.com/ghpvc/?username=AliSoleimaniNet&color=22d3ee&style=flat-square&label=profile+views">
-  &nbsp;
-  <sub>Stats, graphs and the activity feed are regenerated every 6 hours by <a href=".github/workflows">GitHub Actions</a> in this repo.</sub>
+  <br>
+  <sub>Every card on this page is a link. Stats, repository cards and the activity list are regenerated every 6 hours by <a href=".github/workflows">GitHub Actions</a>.</sub>
 </p>

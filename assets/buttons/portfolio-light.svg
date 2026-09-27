@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="261" height="56" viewBox="0 0 261 56" role="img" aria-label="Portfolio: alisoleimaninet.github.io">
+<defs><clipPath id="c"><rect width="261" height="56" rx="14"/></clipPath></defs>
+<g clip-path="url(#c)">
+<rect width="261" height="56" fill="#0891b2"/>
+
+<defs><linearGradient id="s" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".10"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient></defs><rect x="-104.4" y="0" width="104.4" height="56" fill="url(#s)"><animate attributeName="x" values="-104.4;261;261" keyTimes="0;.35;1" dur="7s" begin="0s" repeatCount="indefinite"/></rect>
+</g>
+<rect x=".5" y=".5" width="260" height="55" rx="14" fill="none" stroke="none"/>
+<g transform="translate(18,16) scale(1)" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></g>
+<text x="54" y="26" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="start" textLength="65.3" lengthAdjust="spacingAndGlyphs" >Portfolio</text>
+<text x="54" y="43" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="11.5" font-weight="400" fill="#e0f7fb" text-anchor="start" textLength="172.5" lengthAdjust="spacingAndGlyphs" >alisoleimaninet.github.io</text>
+<g transform="translate(235,21) scale(0.5)" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></g>
+</svg>

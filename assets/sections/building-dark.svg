@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="84" viewBox="0 0 1200 84" role="img" aria-label="02 What I am building">
+<defs><linearGradient id="l" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></linearGradient></defs>
+<text x="0" y="40" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="14" font-weight="700" fill="#22d3ee">02</text>
+<rect x="30" y="31" width="22" height="2" fill="#22d3ee" opacity=".6"/>
+<text x="64" y="44" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="800" fill="#e6e9ef" text-anchor="start" textLength="272.5" lengthAdjust="spacingAndGlyphs" >What I am building</text>
+<text x="64" y="72" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" fill="#8b93a3">Products I lead or own</text>
+<rect x="356.526" y="35" width="0" height="1.5" fill="url(#l)"><animate attributeName="width" values="0;702.4739999999999" dur="1.4s" fill="freeze"/></rect>
+<rect x="356.526" y="35" width="702.4739999999999" height="1.5" fill="url(#l)" opacity=".35"/>
+<text x="1200" y="40" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="12.5" font-weight="400" fill="#8b93a3" text-anchor="end" textLength="105.0" lengthAdjust="spacingAndGlyphs" >all projects ↗</text>
+</svg>

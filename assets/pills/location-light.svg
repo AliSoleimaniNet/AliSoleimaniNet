@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="266" height="38" viewBox="0 0 266 38" role="img" aria-label="Isfahan, Iran · open to remote">
+<rect x=".5" y=".5" width="265" height="37" rx="19" fill="#ffffff" stroke="rgba(8,145,178,0.35)"/>
+<rect x=".5" y=".5" width="265" height="37" rx="19" fill="rgba(8,145,178,0.08)"/>
+<g transform="translate(14,10) scale(0.75)" fill="none" stroke="#0891b2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g>
+<text x="40" y="24" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a" text-anchor="start" textLength="204.2" lengthAdjust="spacingAndGlyphs" >Isfahan, Iran · open to remote</text>
+<g transform="translate(246,14) scale(0.4166666666666667)" fill="none" stroke="#526077" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></g>
+</svg>

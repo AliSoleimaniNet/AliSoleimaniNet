@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [".github/workflows/profile.yml"]
+    paths: [".github/workflows/profile.yml", "scripts/dynamic.mjs", "scripts/lib/**"]
 
 permissions:
   contents: write
@@ -21,62 +21,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # ── lowlighter/metrics: main card ──────────────────────────────
-      - name: Metrics · overview
-        uses: lowlighter/metrics@latest
-        continue-on-error: true
+      - uses: actions/setup-node@v4
         with:
-          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
-          user: AliSoleimaniNet
-          filename: metrics/overview.svg
-          output_action: none
-          template: classic
-          base: header, activity, community, repositories
-          base_indepth: yes
-          repositories_affiliations: owner, collaborator, organization_member
-          commits_authoring: AliSoleimaniNet, gameraliaz@gmail.com, AliSoleimaniWorks@gmail.com
-          config_timezone: Asia/Tehran
-          config_octicon: yes
-          config_display: large
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          node-version: 22
 
-      # ── lowlighter/metrics: habits ─────────────────────────────────
-      - name: Metrics · habits
-        uses: lowlighter/metrics@latest
-        continue-on-error: true
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: AliSoleimaniNet
-          filename: metrics/habits.svg
-          output_action: none
-          template: classic
-          base: ""
-          config_timezone: Asia/Tehran
-          config_display: large
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-          plugin_habits_charts_type: classic
+      # Stat tiles, repository cards and the languages card, rendered from the API
+      - name: Dynamic cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          EXTRA_REPOS: ${{ secrets.EXTRA_REPOS }}
+        run: node scripts/dynamic.mjs dist
 
-      # ── lowlighter/metrics: featured repositories ─────────────────
-      - name: Metrics · featured repos
-        uses: lowlighter/metrics@latest
-        continue-on-error: true
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: AliSoleimaniNet
-          filename: metrics/repos.svg
-          output_action: none
-          template: classic
-          base: ""
-          config_display: large
-          plugin_repositories: yes
-          plugin_repositories_featured: AliSoleimaniNet/Uber-Data-Intelligence-Platform, AliSoleimaniNet/QuizDSL-Studio, AliSoleimaniNet/ProxyChainer, AliSoleimaniNet/ExpressFinder
-
-      # ── Snake ─────────────────────────────────────────────────────
       - name: Snake
         uses: Platane/snk@v3
         continue-on-error: true
@@ -86,35 +41,21 @@ jobs:
             dist/snake/snake-light.svg
             dist/snake/snake-dark.svg?palette=github-dark
 
-      # ── 3D contribution graph ─────────────────────────────────────
       - name: 3D contributions
         uses: yoshi389111/github-profile-3d-contrib@v0.9.3
         continue-on-error: true
         env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           USERNAME: AliSoleimaniNet
           MAX_REPOS: 100
 
-      # ── Collect everything into dist/ ─────────────────────────────
       - name: Collect
         run: |
-          # snk runs in Docker and creates dist/ as root; take ownership first
-          sudo chown -R "$(id -u):$(id -g)" dist /metrics_renders 2>/dev/null || true
-          mkdir -p dist/metrics dist/3d dist/snake
-          echo "--- metrics renders ---"; ls -R /metrics_renders 2>/dev/null || true
-          find /metrics_renders -name '*.svg' -exec cp {} dist/metrics/ \; 2>/dev/null || true
-          echo "--- 3d ---"; ls profile-3d-contrib 2>/dev/null || true
+          sudo chown -R "$(id -u):$(id -g)" dist 2>/dev/null || true
+          mkdir -p dist/3d
           cp profile-3d-contrib/profile-night-green.svg   dist/3d/ 2>/dev/null || true
           cp profile-3d-contrib/profile-green-animate.svg dist/3d/ 2>/dev/null || true
-          cp profile-3d-contrib/profile-night-rainbow.svg dist/3d/ 2>/dev/null || true
-          echo "--- dist ---"; find dist -type f
-
-      - name: Languages card
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
-          EXTRA_REPOS: ${{ secrets.EXTRA_REPOS }}
-        run: node scripts/languages-card.mjs dist/metrics
+          find dist -type f | sort
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v5
@@ -123,6 +64,6 @@ jobs:
           build_dir: dist
           keep_history: false
           jekyll: false
-          commit_message: "chore: refresh profile assets"
+          commit_message: "Refresh profile assets"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
