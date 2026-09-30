@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="92" viewBox="0 0 1200 92" role="img" aria-label="Teaching Assistant at University of Isfahan">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="92" viewBox="0 0 1200 92" role="img" aria-label="Teaching Assistant · undergraduate at University of Isfahan">
 <rect x="23" y="0" width="2" height="92" fill="#0891b2" opacity=".35"/>
 <circle cx="24" cy="46" r="6" fill="#ffffff" stroke="#0891b2" stroke-width="2.5"/>
 
 <g transform="translate(56,6)">
   <rect x=".5" y=".5" width="1143" height="79" rx="12" fill="#ffffff" stroke="rgba(15,23,42,0.12)"/>
-  <text x="22" y="34" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a">Teaching Assistant</text>
+  <text x="22" y="34" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a">Teaching Assistant · undergraduate</text>
   <text x="22" y="60" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" fill="#526077">Computer engineering courses and labs</text>
   <text x="1120" y="34" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" fill="#526077">2022 — 2023</text>
   <text x="1102" y="60" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0891b2" text-anchor="end" textLength="151.5" lengthAdjust="spacingAndGlyphs" >University of Isfahan</text>
