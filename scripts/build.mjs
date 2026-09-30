@@ -66,7 +66,7 @@ const PROJECTS = [
     tags: ['.NET 8', 'Clean Arch', 'CQRS', 'PostgreSQL', 'SQLite'],
   },
   {
-    id: 'kiosell', kicker: 'OWNER & ARCHITECT · IN PROGRESS', title: 'KioSell', sub: 'Multi-tenant commerce & reservation SaaS', site: 'in development',
+    id: 'kiosell', kicker: 'OWNER & ARCHITECT · LAUNCHING SOON', title: 'KioSell', sub: 'Multi-tenant commerce & reservation SaaS', site: 'kiosell.ir',
     lines: ['.NET 10 modular monolith with its own auth server', 'Event-driven outbox / inbox, OpenTelemetry', 'Go gRPC gateways and a Next.js monorepo'],
     tags: ['.NET 10', 'OpenIddict', 'Kafka', 'Go', 'Next.js'],
   },
