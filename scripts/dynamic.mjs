@@ -19,7 +19,8 @@ const write = (rel, svg) => { const p = join(OUT, rel); mkdirSync(dirname(p), { 
 const headers = { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'User-Agent': 'profile-dynamic' };
 async function rest(url) {
   const r = await fetch(url.startsWith('http') ? url : `https://api.github.com${url}`, { headers });
-  if (!r.ok) throw new Error(`${r.status} ${url}`);
+  // mask owner/repo so a failure can never print a private repository name into the public log
+  if (!r.ok) throw new Error(`${r.status} ${url.replace(/\/repos\/[^/?]+\/[^/?]+/, '/repos/<masked>')}`);
   return { json: await r.json(), link: r.headers.get('link') || '' };
 }
 async function gql(query, variables = {}) {
@@ -150,11 +151,12 @@ ${metaParts.join('')}
 const SKIP_REPOS = new Set(['quizdsl-studio', 'hw3nlp', 'idash2018_docker', 'matrixmultiplymr', 'bdhw5-lakehouse', 'alisoleimaninet', 'alisoleimaninet.github.io']);
 const SKIP_LANGS = new Set(['java', 'gap', 'systemverilog', 'html', 'css', 'scss', 'jupyter notebook', 'tex', 'makefile', 'dockerfile', 'shell', 'batchfile', 'qmake', 'xtend', 'powershell', 'cmake', 'smarty', 'plpgsql', 'tsql', 'hcl', 'procfile', 'mdx', 'asp.net']);
 async function languages() {
+  let skipped = 0;
   const repos = [];
   let url = '/user/repos?affiliation=owner&per_page=100&sort=pushed';
   while (url) { const { json, link } = await rest(url); repos.push(...json); url = /<([^>]+)>;\s*rel="next"/.exec(link)?.[1] ?? null; }
   for (const full of (process.env.EXTRA_REPOS || '').split(',').map((s) => s.trim()).filter(Boolean)) {
-    try { repos.push((await rest(`/repos/${full}`)).json); } catch (e) { console.error('extra repo skipped:', e.message); }
+    try { repos.push((await rest(`/repos/${full}`)).json); } catch { skipped++; } // never log names: this repo is public and these may be private
   }
   const totals = new Map();
   let counted = 0;
@@ -164,11 +166,12 @@ async function languages() {
       const { json } = await rest(`/repos/${r.full_name}/languages`);
       for (const [lang, bytes] of Object.entries(json)) if (!SKIP_LANGS.has(lang.toLowerCase())) totals.set(lang, (totals.get(lang) || 0) + bytes);
       counted++;
-    } catch (e) { console.error('skip', r.full_name, e.message); }
+    } catch { skipped++; } // never log names: private repositories must not appear in public logs
   }
   const sum = [...totals.values()].reduce((a, b) => a + b, 0) || 1;
   const top = [...totals.entries()].sort((a, b) => b[1] - a[1]).map(([name, bytes]) => ({ name, bytes, pct: (bytes / sum) * 100 }))
     .filter((l) => l.pct >= 0.5).slice(0, 6);
+  if (skipped) console.log(`languages: ${skipped} repositories could not be read (names withheld)`);
   return { top, counted };
 }
 function languagesCard(t, { top, counted }) {

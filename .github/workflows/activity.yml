@@ -1,20 +1,24 @@
 name: recent-activity
 
+# Only first-party actions (pinned to commit SHAs) and our own script run here.
+# The script prints nothing but a status line; it never logs repository names.
+
 on:
   schedule:
     - cron: "37 */6 * * *"
   workflow_dispatch:
 
-permissions:
-  contents: write
+permissions: {}
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: 22
 
