@@ -82,16 +82,20 @@ const PRINCIPLES = [
 ];
 
 const EXPERIENCE = [
-  { id: 'helpsy', period: 'Aug 2024 — now', role: 'Tech Lead & Software Architect', org: 'Helpsy', href: 'https://helpsy.ir', note: 'Designed the architecture · lead backend and frontend teams · run the servers', current: true },
-  { id: 'gymivo', period: 'Sep 2025 — now', role: 'Co-founder & Backend Lead', org: 'Gymivo', href: `${SITE}/#project-gymivo`, note: 'Fitness platform launching at gymivo.ir · ASP.NET Core 10 API', current: true },
-  { id: 'barnabus', period: '2026', role: 'Go Engineer · Identity & Access', org: 'Barnabus', href: 'https://barnabus.ai', note: 'Designed and built SSO, MFA and OAuth2 / OIDC for a healthcare product family' },
-  { id: 'ta-ase', period: 'Sep 2026 — Dec 2026', role: 'Teaching Assistant · Advanced Software Engineering', org: 'University of Isfahan', href: LINKEDIN, note: 'Graduate (M.Sc.) course taught by Dr. Sharbaf', current: true },
-  { id: 'bar1', period: 'Oct 2023 — Apr 2024', role: 'Full-Stack Developer', org: 'Bar1', href: 'https://bar1.ir', note: 'Internal panels of a freight-transport platform in .NET' },
-  { id: 'ta', period: '2022 — 2023', role: 'Teaching Assistant · three undergraduate courses', org: 'University of Isfahan', href: LINKEDIN, note: 'Intro Programming · Data Structures & Algorithms · Social Networks, with Dr. Hosseini-Pozveh' },
-  { id: 'msc', period: '2025 — now', role: 'M.Sc. Software Engineering', org: 'University of Isfahan', href: LINKEDIN, note: 'Graduate program in progress · TA for Advanced Software Engineering', edu: true, current: true },
-  { id: 'bsc', period: '2020 — 2024', role: 'B.Sc. Computer Engineering', org: 'University of Isfahan', href: LINKEDIN, note: 'Undergraduate degree in computer engineering', edu: true },
-  { id: 'oje', period: '2016 — 2019', role: 'Co-founder · where it started', org: 'OjeAmoozesh', href: 'https://ojeamoozesh.ir', note: 'Study-planning platform · as a teenager, company sites and my own hosting' },
+  { id: 'helpsy', end: 'now', period: 'Aug 2024 — now', role: 'Tech Lead & Software Architect', org: 'Helpsy', href: 'https://helpsy.ir', note: 'Designed the architecture · lead backend and frontend teams · run the servers', current: true },
+  { id: 'gymivo', end: 'now', period: 'Sep 2025 — now', role: 'Co-founder & Backend Lead', org: 'Gymivo', href: `${SITE}/#project-gymivo`, note: 'Fitness platform launching at gymivo.ir · ASP.NET Core 10 API', current: true },
+  { id: 'msc', end: 'now', period: '2025 — now', role: 'M.Sc. Software Engineering', org: 'University of Isfahan', href: LINKEDIN, note: 'Graduate program in progress · TA for Advanced Software Engineering', edu: true, current: true },
+  { id: 'barnabus', end: '2026-09', period: '2026', role: 'Go Engineer · Identity & Access', org: 'Barnabus', href: 'https://barnabus.ai', note: 'Designed and built SSO, MFA and OAuth2 / OIDC for a healthcare product family' },
+  { id: 'ta-ase', end: '2026-12', period: 'Sep 2026 — Dec 2026', role: 'Teaching Assistant · Advanced Software Engineering', org: 'University of Isfahan', href: LINKEDIN, note: 'Graduate (M.Sc.) course taught by Dr. Sharbaf', current: true },
+  { id: 'bar1', end: '2024-04', period: 'Oct 2023 — Apr 2024', role: 'Full-Stack Developer', org: 'Bar1', href: 'https://bar1.ir', note: 'Internal panels of a freight-transport platform in .NET' },
+  { id: 'ta', end: '2023-03', period: '2022 — 2023', role: 'Teaching Assistant · three undergraduate courses', org: 'University of Isfahan', href: LINKEDIN, note: 'Intro Programming · Data Structures & Algorithms · Social Networks, with Dr. Hosseini-Pozveh' },
+  { id: 'bsc', end: '2024-07', period: '2020 — 2024', role: 'B.Sc. Computer Engineering', org: 'University of Isfahan', href: LINKEDIN, note: 'Undergraduate degree in computer engineering', edu: true },
+  { id: 'oje', end: '2019-12', period: '2016 — 2019', role: 'Co-founder · where it started', org: 'OjeAmoozesh', href: 'https://ojeamoozesh.ir', note: 'Study-planning platform · as a teenager, company sites and my own hosting' },
 ];
+
+// Newest first by end date; ongoing roles ('now') on top, ties keep the order above.
+const endKey = (e) => (e.end === 'now' ? '9999-99' : e.end);
+EXPERIENCE.sort((a, b) => endKey(b).localeCompare(endKey(a)));
 
 // icon: file in assets/icons · mono: fallback monogram · url: where the chip links
 const STACK = [
