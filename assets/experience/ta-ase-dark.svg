@@ -6,7 +6,7 @@
   <rect x=".5" y=".5" width="1143" height="79" rx="12" fill="#0e1219" stroke="rgba(255,255,255,0.10)"/>
   <text x="22" y="34" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#e6e9ef">Teaching Assistant · Advanced Software Engineering</text>
   <text x="22" y="60" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" fill="#8b93a3">Graduate (M.Sc.) course taught by Dr. Sharbaf</text>
-  <text x="1120" y="34" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" fill="#8b93a3">Sep 2026 — Dec 2026</text>
+  <text x="1120" y="34" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" fill="#8b93a3">Sep 2026 — now</text>
   <text x="1102" y="60" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#22d3ee" text-anchor="end" textLength="151.5" lengthAdjust="spacingAndGlyphs" >University of Isfahan</text>
   <g transform="translate(1108,49) scale(0.5)" fill="none" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></g>
 </g>
