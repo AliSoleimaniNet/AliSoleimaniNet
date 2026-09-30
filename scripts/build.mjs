@@ -88,7 +88,8 @@ const EXPERIENCE = [
   { id: 'ta-ase', period: 'Sep 2026 — Dec 2026', role: 'Teaching Assistant · Advanced Software Engineering', org: 'University of Isfahan', href: LINKEDIN, note: 'Graduate (M.Sc.) course taught by Dr. Sharbaf', current: true },
   { id: 'bar1', period: 'Oct 2023 — Apr 2024', role: 'Full-Stack Developer', org: 'Bar1', href: 'https://bar1.ir', note: 'Internal panels of a freight-transport platform in .NET' },
   { id: 'ta', period: '2022 — 2023', role: 'Teaching Assistant · undergraduate', org: 'University of Isfahan', href: LINKEDIN, note: 'Computer engineering courses and labs' },
-  { id: 'edu', period: '2020 — now', role: 'B.Sc. Computer Eng. · M.Sc. Software Eng.', org: 'University of Isfahan', href: LINKEDIN, note: 'M.Sc. in progress', edu: true },
+  { id: 'msc', period: '2025 — now', role: 'M.Sc. Software Engineering', org: 'University of Isfahan', href: LINKEDIN, note: 'Graduate program in progress · TA for Advanced Software Engineering', edu: true, current: true },
+  { id: 'bsc', period: '2020 — 2024', role: 'B.Sc. Computer Engineering', org: 'University of Isfahan', href: LINKEDIN, note: 'Undergraduate degree in computer engineering', edu: true },
   { id: 'oje', period: '2016 — 2019', role: 'Co-founder · where it started', org: 'OjeAmoozesh', href: 'https://ojeamoozesh.ir', note: 'Study-planning platform · as a teenager, company sites and my own hosting' },
 ];
 
@@ -306,7 +307,7 @@ function experience(t, e, i, n) {
   return `${svgOpen(W, H, `${e.role} at ${e.org}`)}
 <rect x="23" y="${first ? 46 : 0}" width="2" height="${last ? 46 : H - (first ? 46 : 0)}" fill="${t.accent}" opacity=".35"/>
 <circle cx="24" cy="46" r="${e.current ? 7 : 6}" fill="${t.bg0}" stroke="${e.edu ? t.accent2 : t.accent}" stroke-width="2.5"/>
-${e.current ? `<circle cx="24" cy="46" r="7" fill="none" stroke="${t.accent}"><animate attributeName="r" values="7;16" dur="2s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".7;0" dur="2s" repeatCount="indefinite"/></circle>` : ''}
+${e.current ? `<circle cx="24" cy="46" r="7" fill="none" stroke="${e.edu ? t.accent2 : t.accent}"><animate attributeName="r" values="7;16" dur="2s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".7;0" dur="2s" repeatCount="indefinite"/></circle>` : ''}
 <g transform="translate(56,6)">
   <rect x=".5" y=".5" width="${W - 57}" height="${H - 13}" rx="12" fill="${t.card}" stroke="${t.cardBorder}"/>
   <text x="22" y="34" font-family="${FONT}" font-size="19" font-weight="700" fill="${t.text}">${esc(e.role)}</text>
