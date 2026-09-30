@@ -18,9 +18,10 @@ const out = (rel, svg) => { const p = join(A, rel); mkdirSync(dirname(p), { recu
 /* ───────────────────────── content ───────────────────────── */
 
 const PILLS = [
-  { id: 'helpsy', label: 'Tech Lead @ Helpsy', href: 'https://helpsy.ir', glyph: 'briefcase' },
+  { id: 'helpsy', label: 'Tech Lead & Architect @ Helpsy', href: 'https://helpsy.ir', glyph: 'briefcase' },
+  { id: 'gymivo', label: 'Co-founder @ Gymivo', href: `${SITE}/#project-gymivo`, glyph: 'rocket' },
   { id: 'barnabus', label: 'Go IAM @ Barnabus', href: 'https://barnabus.ai', glyph: 'key' },
-  { id: 'stack', label: '.NET · Go · Distributed systems', href: `${SITE}/#stack`, glyph: 'layers' },
+  { id: 'stack', label: 'System design · .NET · Go', href: `${SITE}/#architecture`, glyph: 'layers' },
   { id: 'msc', label: 'M.Sc. SE · University of Isfahan', href: LINKEDIN, glyph: 'cap' },
   { id: 'location', label: 'Isfahan, Iran · open to remote', href: `${SITE}/#contact`, glyph: 'pin' },
 ];
@@ -32,10 +33,10 @@ const BUTTONS = [
 ];
 
 const SECTIONS = [
-  { id: 'about', n: '01', title: 'About', sub: 'Backend engineer, tech lead, systems person', href: `${SITE}/#about`, hint: 'read more on the site' },
+  { id: 'about', n: '01', title: 'About', sub: 'Tech lead, software architect, systems person', href: `${SITE}/#about`, hint: 'read more on the site' },
   { id: 'building', n: '02', title: 'What I am building', sub: 'Products I lead or own', href: `${SITE}/#projects`, hint: 'all projects' },
   { id: 'opensource', n: '03', title: 'Open source', sub: 'Live stars, forks and activity from the GitHub API', href: `${GH}?tab=repositories`, hint: 'all repositories' },
-  { id: 'architecture', n: '04', title: 'The shape I reach for', sub: 'A reference architecture, not any one product', href: `${SITE}/#architecture`, hint: 'interactive on the site' },
+  { id: 'architecture', n: '04', title: 'System design', sub: 'The reference architecture I design towards, not any one product', href: `${SITE}/#architecture`, hint: 'interactive on the site' },
   { id: 'principles', n: '05', title: 'How I work', sub: 'Principles I keep coming back to', href: `${SITE}/#principles`, hint: 'on the site' },
   { id: 'experience', n: '06', title: 'Experience', sub: 'Where I have shipped', href: LINKEDIN, hint: 'full history on LinkedIn' },
   { id: 'stack', n: '07', title: 'Stack', sub: 'Every chip links to the tool', href: `${SITE}/#stack`, hint: 'on the site' },
@@ -45,22 +46,27 @@ const SECTIONS = [
 
 const PROJECTS = [
   {
-    id: 'helpsy', kicker: 'TECH LEAD · PRODUCTION', title: 'Helpsy', sub: 'Mental-health clinic & therapy platform', site: 'helpsy.ir',
-    lines: ['Multi-tenant platform for clinics and therapists', 'Booking, payments, psychology tests, ticketing', 'I lead the .NET backend, frontend team and CI/CD'],
+    id: 'helpsy', kicker: 'TECH LEAD & ARCHITECT · PRODUCTION', title: 'Helpsy', sub: 'Mental-health clinic & therapy platform', site: 'helpsy.ir',
+    lines: ['Multi-tenant platform for clinics and therapists', 'Booking, payments, psychology tests, ticketing', 'I designed the architecture and lead the teams'],
     tags: ['.NET', 'gRPC', 'RabbitMQ', 'PostgreSQL', 'Redis', 'Next.js'],
   },
   {
     id: 'barnabus', kicker: 'GO · PRODUCTION', title: 'Barnabus IAM', sub: 'Identity & access platform', site: 'barnabus.ai',
-    lines: ['Go identity provider for a healthcare product family', 'Single sign-on, MFA and OAuth2 / OIDC flows', 'Multi-tenant, audited, fully instrumented'],
+    lines: ['Designed and built the Go identity provider', 'Single sign-on, MFA and OAuth2 / OIDC flows', 'Multi-tenant, audited, fully instrumented'],
     tags: ['Go', 'OAuth2 / OIDC', 'PostgreSQL', 'Redis', 'OTel'],
   },
   {
-    id: 'kiosk', kicker: 'OWNER · PRODUCTION', title: 'Kiosk Management', sub: 'Self-service payment kiosks', site: 'public-sector client',
+    id: 'gymivo', kicker: 'CO-FOUNDER · LAUNCHING SOON', title: 'Gymivo', sub: 'Fitness platform for athletes and coaches', site: 'gymivo.ir',
+    lines: ['Find a coach, get a workout plan, track progress', 'Challenges, exercise library and coach chat', 'Co-founder, I designed and lead the .NET backend'],
+    tags: ['.NET 10', 'Clean Arch', 'EF Core', 'PostgreSQL', 'Next.js'],
+  },
+  {
+    id: 'kiosk', kicker: 'OWNER & ARCHITECT · PRODUCTION', title: 'Kiosk Management', sub: 'Self-service payment kiosks', site: 'varzesh.kish.ir',
     lines: ['Bank POS terminal and receipt-printer integration', 'Offline-first agent with store-and-forward sync', 'Dozens of kiosks, thousands of payments a day'],
     tags: ['.NET 8', 'Clean Arch', 'CQRS', 'PostgreSQL', 'SQLite'],
   },
   {
-    id: 'kiosell', kicker: 'OWNER · IN PROGRESS', title: 'KioSell', sub: 'Multi-tenant commerce & reservation SaaS', site: 'in development',
+    id: 'kiosell', kicker: 'OWNER & ARCHITECT · IN PROGRESS', title: 'KioSell', sub: 'Multi-tenant commerce & reservation SaaS', site: 'in development',
     lines: ['.NET 10 modular monolith with its own auth server', 'Event-driven outbox / inbox, OpenTelemetry', 'Go gRPC gateways and a Next.js monorepo'],
     tags: ['.NET 10', 'OpenIddict', 'Kafka', 'Go', 'Next.js'],
   },
@@ -76,11 +82,13 @@ const PRINCIPLES = [
 ];
 
 const EXPERIENCE = [
-  { id: 'helpsy', period: 'Aug 2024 — now', role: 'Senior Backend Engineer & Tech Lead', org: 'Helpsy', href: 'https://helpsy.ir', note: '.NET microservices, the frontend team, CI/CD and infrastructure', current: true },
-  { id: 'barnabus', period: '2026', role: 'Go Engineer · Identity & Access', org: 'Barnabus', href: 'https://barnabus.ai', note: 'SSO, MFA and OAuth2 / OIDC for a healthcare product family' },
-  { id: 'bar1', period: 'Oct 2023 — Apr 2024', role: 'Full-Stack Developer', org: 'Bar1', href: LINKEDIN, note: 'Logistics and freight platform in .NET' },
+  { id: 'helpsy', period: 'Aug 2024 — now', role: 'Tech Lead & Software Architect', org: 'Helpsy', href: 'https://helpsy.ir', note: 'Designed the architecture · lead backend and frontend teams · run the servers', current: true },
+  { id: 'gymivo', period: 'Sep 2025 — now', role: 'Co-founder & Backend Lead', org: 'Gymivo', href: `${SITE}/#project-gymivo`, note: 'Fitness platform launching at gymivo.ir · ASP.NET Core 10 API', current: true },
+  { id: 'barnabus', period: '2026', role: 'Go Engineer · Identity & Access', org: 'Barnabus', href: 'https://barnabus.ai', note: 'Designed and built SSO, MFA and OAuth2 / OIDC for a healthcare product family' },
+  { id: 'bar1', period: 'Oct 2023 — Apr 2024', role: 'Full-Stack Developer', org: 'Bar1', href: 'https://bar1.ir', note: 'Internal panels of a freight-transport platform in .NET' },
   { id: 'ta', period: '2022 — 2023', role: 'Teaching Assistant', org: 'University of Isfahan', href: LINKEDIN, note: 'Computer engineering courses and labs' },
   { id: 'edu', period: '2020 — now', role: 'B.Sc. Computer Eng. · M.Sc. Software Eng.', org: 'University of Isfahan', href: LINKEDIN, note: 'M.Sc. in progress', edu: true },
+  { id: 'oje', period: '2016 — 2019', role: 'Co-founder · where it started', org: 'OjeAmoozesh', href: 'https://ojeamoozesh.ir', note: 'Study-planning platform · as a teenager, company sites and my own hosting' },
 ];
 
 // icon: file in assets/icons · mono: fallback monogram · url: where the chip links
@@ -130,6 +138,7 @@ const REPOS = FEATURED_REPOS.map((r) => r.name);
 
 /* ───────────────────────── glyphs (stroke icons, 24-unit grid) ───────────────────────── */
 const GLYPHS = {
+  rocket: '<path d="M5 15c-1.5 1.3-2 4-2 6 2 0 4.7-.5 6-2"/><path d="M9 18 6 15c.7-3.8 3-8.6 9-11 2.3-.9 4.6-1 6-1 0 1.4-.1 3.7-1 6-2.4 6-7.2 8.3-11 9z"/><circle cx="15" cy="9" r="1.6"/>',
   briefcase: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/>',
   key: '<circle cx="8" cy="15" r="4"/><path d="m10.8 12.2 8.2-8.2M17 6l2 2M15 8l2 2"/>',
   layers: '<path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/>',
@@ -166,8 +175,8 @@ function mesh(t) {
   });
   return s;
 }
-const ROLES = ['Backend .NET Tech Lead', 'Go Engineer', 'Distributed Systems Builder', 'Microservices Architect'];
-const TYPED = 'building scalable, maintainable microservices';
+const ROLES = ['Tech Lead & Software Architect', 'System Designer', 'Backend .NET & Go Engineer', 'Co-founder @ Gymivo'];
+const TYPED = 'leading teams, designing scalable systems';
 function header(t) {
   const roleDur = 3, total = ROLES.length * roleDur;
   const roles = ROLES.map((r, i) => {
@@ -416,7 +425,7 @@ const prev = existsSync(readmePath) ? readFileSync(readmePath, 'utf8') : '';
 const actMatch = /<!--START_SECTION:activity-->[\s\S]*?<!--END_SECTION:activity-->/.exec(prev);
 const activity = actMatch ? actMatch[0] : '<!--START_SECTION:activity-->\n<!--END_SECTION:activity-->';
 
-const md = `${link(SITE, pic('assets/header', 'Ali Soleimani — Backend .NET Tech Lead & Go Engineer', 'width="100%"'))}
+const md = `${link(SITE, pic('assets/header', 'Ali Soleimani — Tech Lead & Software Architect', 'width="100%"'))}
 
 <p align="center">
 ${PILLS.map((p) => link(p.href, pic(`assets/pills/${p.id}`, p.label, 'height="38"'))).join('\n')}
@@ -426,7 +435,7 @@ ${PILLS.map((p) => link(p.href, pic(`assets/pills/${p.id}`, p.label, 'height="38
 ${BUTTONS.map((b) => link(b.href, pic(`assets/buttons/${b.id}`, `${b.label}: ${b.hint}`, 'height="56"'))).join('\n')}
 </p>
 ${section('about')}
-I lead the engineering behind **[Helpsy](https://helpsy.ir)**, a mental-health clinic platform: the .NET backend, the frontend team and the delivery pipeline that ships it. I also write **Go**, and built the identity and access platform behind **[Barnabus](https://barnabus.ai)**. Before that I built, and still operate, a self-service payment kiosk network that handles thousands of payments a day.
+I am tech lead and software architect at **[Helpsy](https://helpsy.ir)**, a mental-health clinic platform: I designed its system architecture, lead the backend and frontend teams, and run the servers and delivery pipeline behind it. I am co-founder of **[Gymivo](${SITE}/#project-gymivo)**, a fitness platform launching soon, where I lead the backend. I also write **Go**, and designed and built the identity and access platform behind **[Barnabus](https://barnabus.ai)**. Before that I designed, built and still operate a self-service payment kiosk network that handles thousands of payments a day. It all started when I was a teenager, building websites for companies and online stores and hosting them myself.
 
 I like the hard parts: distributed systems, identity, payments and the infrastructure that keeps them honest. I am a graduate student in Software Engineering at the University of Isfahan, and I care about clean architecture, developer tooling and documentation people actually read.
 ${section('building')}
@@ -460,7 +469,8 @@ ${link(`${GH}?tab=repositories`, pic(`${RAW}/metrics/languages`, 'Most used lang
 ${link(`${GH}?tab=repositories`, pic(`${RAW}/stats/overview`, 'Repositories, stars and followers', 'width="49%"'))}
 </p>
 
-${link(GH, `<picture><source media="(prefers-color-scheme: dark)" srcset="${RAW}/3d/profile-night-green.svg"><source media="(prefers-color-scheme: light)" srcset="${RAW}/3d/profile-green-animate.svg"><img src="${RAW}/3d/profile-night-green.svg" alt="3D contribution graph" width="100%"></picture>`)}
+${link(GH, `<picture><source media="(prefers-color-scheme: dark)" srcset="${RAW}/3d/profile-night-green.svg"><source media="(prefers-color-scheme: light)" srcset="${RAW}/3d/profile-green-animate.svg"><img src="${RAW}/3d/profile-night-green.svg" alt="3D contribution graph (language donut covers public repositories only)" width="100%"></picture>`)}
+<p align="center"><sub>The 3D graph and its language donut only see public repositories. The languages card above includes private work.</sub></p>
 
 ${link(GH, `<picture><source media="(prefers-color-scheme: dark)" srcset="${RAW}/snake/snake-dark.svg"><source media="(prefers-color-scheme: light)" srcset="${RAW}/snake/snake-light.svg"><img src="${RAW}/snake/snake-dark.svg" alt="Contribution snake" width="100%"></picture>`)}
 

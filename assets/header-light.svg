@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-label="Ali Soleimani, Backend .NET Tech Lead">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-label="Ali Soleimani, Tech Lead &amp; Software Architect">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f3f6fb"/></linearGradient>
   <linearGradient id="name" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0f172a"/><stop offset=".55" stop-color="#0891b2"/><stop offset="1" stop-color="#7c3aed"/>
     <animate attributeName="x1" values="-1;1" dur="6s" repeatCount="indefinite"/><animate attributeName="x2" values="0;2" dur="6s" repeatCount="indefinite"/></linearGradient>
   <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#0891b2" stop-opacity=".22"/><stop offset="1" stop-color="#0891b2" stop-opacity="0"/></radialGradient>
-  <clipPath id="typeClip"><rect x="0" y="-18" width="462" height="26"><animate attributeName="width" values="0;0;462;462;0" keyTimes="0;.08;.55;.92;1" dur="9s" repeatCount="indefinite"/></rect></clipPath>
+  <clipPath id="typeClip"><rect x="0" y="-18" width="421" height="26"><animate attributeName="width" values="0;0;421;421;0" keyTimes="0;.08;.55;.92;1" dur="9s" repeatCount="indefinite"/></rect></clipPath>
   <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="rgba(15,23,42,0.07)"/></pattern>
 </defs>
 <rect width="1200" height="250" rx="16" fill="url(#bg)"/><rect width="1200" height="250" rx="16" fill="url(#grid)"/>
@@ -14,13 +14,13 @@
 <g transform="translate(64,0)">
   <text x="0" y="66" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" fill="#526077">// hi, I am</text>
   <text x="-2" y="132" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="66" font-weight="800" letter-spacing="-1.5" fill="url(#name)">Ali Soleimani</text>
-  <g transform="translate(0,176)"><text opacity="1" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#0891b2">Backend .NET Tech Lead<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0.0000;0.0400;0.2250;0.2500;1.0000" dur="12s" begin="0s" repeatCount="indefinite"/></text><text opacity="0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#0891b2">Go Engineer<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0.0000;0.0400;0.2250;0.2500;1.0000" dur="12s" begin="3s" repeatCount="indefinite"/></text><text opacity="0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#0891b2">Distributed Systems Builder<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0.0000;0.0400;0.2250;0.2500;1.0000" dur="12s" begin="6s" repeatCount="indefinite"/></text><text opacity="0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#0891b2">Microservices Architect<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0.0000;0.0400;0.2250;0.2500;1.0000" dur="12s" begin="9s" repeatCount="indefinite"/></text></g>
+  <g transform="translate(0,176)"><text opacity="1" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#0891b2">Tech Lead &amp; Software Architect<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0.0000;0.0400;0.2250;0.2500;1.0000" dur="12s" begin="0s" repeatCount="indefinite"/></text><text opacity="0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#0891b2">System Designer<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0.0000;0.0400;0.2250;0.2500;1.0000" dur="12s" begin="3s" repeatCount="indefinite"/></text><text opacity="0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#0891b2">Backend .NET &amp; Go Engineer<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0.0000;0.0400;0.2250;0.2500;1.0000" dur="12s" begin="6s" repeatCount="indefinite"/></text><text opacity="0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#0891b2">Co-founder @ Gymivo<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0.0000;0.0400;0.2250;0.2500;1.0000" dur="12s" begin="9s" repeatCount="indefinite"/></text></g>
   <g transform="translate(0,218)" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16">
     <text x="0" y="0" fill="#526077">›</text>
-    <text x="16" y="0" fill="#0f172a" clip-path="url(#typeClip)">building scalable, maintainable microservices</text>
-    <rect x="478" y="-14" width="9" height="18" fill="#0891b2">
+    <text x="16" y="0" fill="#0f172a" clip-path="url(#typeClip)">leading teams, designing scalable systems</text>
+    <rect x="437" y="-14" width="9" height="18" fill="#0891b2">
       <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1s" repeatCount="indefinite"/>
-      <animate attributeName="x" values="16;16;478;478;16" keyTimes="0;.08;.55;.92;1" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="16;16;437;437;16" keyTimes="0;.08;.55;.92;1" dur="9s" repeatCount="indefinite"/>
     </rect>
   </g>
 </g>

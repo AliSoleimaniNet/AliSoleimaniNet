@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="92" viewBox="0 0 1200 92" role="img" aria-label="Co-founder · where it started at OjeAmoozesh">
+<rect x="23" y="0" width="2" height="46" fill="#22d3ee" opacity=".35"/>
+<circle cx="24" cy="46" r="6" fill="#07090f" stroke="#22d3ee" stroke-width="2.5"/>
+
+<g transform="translate(56,6)">
+  <rect x=".5" y=".5" width="1143" height="79" rx="12" fill="#0e1219" stroke="rgba(255,255,255,0.10)"/>
+  <text x="22" y="34" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#e6e9ef">Co-founder · where it started</text>
+  <text x="22" y="60" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" fill="#8b93a3">Study-planning platform · as a teenager, company sites and my own hosting</text>
+  <text x="1120" y="34" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" fill="#8b93a3">2016 — 2019</text>
+  <text x="1102" y="60" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#22d3ee" text-anchor="end" textLength="98.7" lengthAdjust="spacingAndGlyphs" >OjeAmoozesh</text>
+  <g transform="translate(1108,49) scale(0.5)" fill="none" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></g>
+</g>
+</svg>

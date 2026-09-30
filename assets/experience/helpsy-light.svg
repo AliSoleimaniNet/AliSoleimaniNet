@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="92" viewBox="0 0 1200 92" role="img" aria-label="Senior Backend Engineer &amp; Tech Lead at Helpsy">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="92" viewBox="0 0 1200 92" role="img" aria-label="Tech Lead &amp; Software Architect at Helpsy">
 <rect x="23" y="46" width="2" height="46" fill="#0891b2" opacity=".35"/>
 <circle cx="24" cy="46" r="7" fill="#ffffff" stroke="#0891b2" stroke-width="2.5"/>
 <circle cx="24" cy="46" r="7" fill="none" stroke="#0891b2"><animate attributeName="r" values="7;16" dur="2s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".7;0" dur="2s" repeatCount="indefinite"/></circle>
 <g transform="translate(56,6)">
   <rect x=".5" y=".5" width="1143" height="79" rx="12" fill="#ffffff" stroke="rgba(15,23,42,0.12)"/>
-  <text x="22" y="34" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a">Senior Backend Engineer &amp; Tech Lead</text>
-  <text x="22" y="60" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" fill="#526077">.NET microservices, the frontend team, CI/CD and infrastructure</text>
+  <text x="22" y="34" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#0f172a">Tech Lead &amp; Software Architect</text>
+  <text x="22" y="60" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" fill="#526077">Designed the architecture · lead backend and frontend teams · run the servers</text>
   <text x="1120" y="34" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" fill="#526077">Aug 2024 — now</text>
   <text x="1102" y="60" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0891b2" text-anchor="end" textLength="48.2" lengthAdjust="spacingAndGlyphs" >Helpsy</text>
   <g transform="translate(1108,49) scale(0.5)" fill="none" stroke="#0891b2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></g>

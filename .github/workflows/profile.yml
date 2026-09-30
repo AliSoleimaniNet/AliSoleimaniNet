@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [".github/workflows/profile.yml", "scripts/dynamic.mjs", "scripts/lib/**"]
+    paths: [".github/workflows/profile.yml", "scripts/dynamic.mjs", "scripts/annotate-3d.mjs", "scripts/lib/**"]
 
 permissions:
   contents: write
@@ -55,6 +55,7 @@ jobs:
           mkdir -p dist/3d
           cp profile-3d-contrib/profile-night-green.svg   dist/3d/ 2>/dev/null || true
           cp profile-3d-contrib/profile-green-animate.svg dist/3d/ 2>/dev/null || true
+          node scripts/annotate-3d.mjs dist/3d || true
           find dist -type f | sort
 
       - name: Publish to output branch
