@@ -87,7 +87,7 @@ const EXPERIENCE = [
   { id: 'barnabus', period: '2026', role: 'Go Engineer · Identity & Access', org: 'Barnabus', href: 'https://barnabus.ai', note: 'Designed and built SSO, MFA and OAuth2 / OIDC for a healthcare product family' },
   { id: 'ta-ase', period: 'Sep 2026 — Dec 2026', role: 'Teaching Assistant · Advanced Software Engineering', org: 'University of Isfahan', href: LINKEDIN, note: 'Graduate (M.Sc.) course taught by Dr. Sharbaf', current: true },
   { id: 'bar1', period: 'Oct 2023 — Apr 2024', role: 'Full-Stack Developer', org: 'Bar1', href: 'https://bar1.ir', note: 'Internal panels of a freight-transport platform in .NET' },
-  { id: 'ta', period: '2022 — 2023', role: 'Teaching Assistant · undergraduate', org: 'University of Isfahan', href: LINKEDIN, note: 'Computer engineering courses and labs' },
+  { id: 'ta', period: '2022 — 2023', role: 'Teaching Assistant · three undergraduate courses', org: 'University of Isfahan', href: LINKEDIN, note: 'Intro Programming · Data Structures & Algorithms · Social Networks, with Dr. Hosseini-Pozveh' },
   { id: 'msc', period: '2025 — now', role: 'M.Sc. Software Engineering', org: 'University of Isfahan', href: LINKEDIN, note: 'Graduate program in progress · TA for Advanced Software Engineering', edu: true, current: true },
   { id: 'bsc', period: '2020 — 2024', role: 'B.Sc. Computer Engineering', org: 'University of Isfahan', href: LINKEDIN, note: 'Undergraduate degree in computer engineering', edu: true },
   { id: 'oje', period: '2016 — 2019', role: 'Co-founder · where it started', org: 'OjeAmoozesh', href: 'https://ojeamoozesh.ir', note: 'Study-planning platform · as a teenager, company sites and my own hosting' },
