@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="250" viewBox="0 0 600 250" role="img" aria-label="Most used languages">
+<defs><linearGradient id="rail" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0891b2"/><stop offset="1" stop-color="#7c3aed"/></linearGradient><radialGradient id="glow" cx="1" cy="0" r="1"><stop offset="0" stop-color="#0891b2" stop-opacity=".16"/><stop offset=".6" stop-color="#0891b2" stop-opacity="0"/></radialGradient><clipPath id="clip"><rect x=".5" y=".5" width="599" height="249" rx="14"/></clipPath></defs><rect x=".5" y=".5" width="599" height="249" rx="14" fill="#ffffff" stroke="rgba(15,23,42,0.12)"/><rect x=".5" y=".5" width="599" height="249" rx="14" fill="url(#glow)"/>
+<defs><clipPath id="bar"><rect x="24" y="54" width="552" height="10" rx="5"/></clipPath></defs>
+<text x="24" y="36" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#0891b2">Most used languages</text>
+<text x="576" y="36" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="12" fill="#526077">45 repos I author · public + private</text>
+<rect x="24" y="54" width="552" height="10" rx="5" fill="rgba(15,23,42,0.07)"/>
+<g clip-path="url(#bar)"><rect x="24.0" y="54" width="185.6" height="10" fill="#178600"><animate attributeName="width" from="0" to="185.6" dur="1s" begin="0.00s" fill="freeze"/></rect><rect x="209.6" y="54" width="158.1" height="10" fill="#f1e05a"><animate attributeName="width" from="0" to="158.1" dur="1s" begin="0.08s" fill="freeze"/></rect><rect x="367.7" y="54" width="112.8" height="10" fill="#3178c6"><animate attributeName="width" from="0" to="112.8" dur="1s" begin="0.16s" fill="freeze"/></rect><rect x="480.5" y="54" width="49.5" height="10" fill="#00ADD8"><animate attributeName="width" from="0" to="49.5" dur="1s" begin="0.24s" fill="freeze"/></rect><rect x="529.9" y="54" width="28.7" height="10" fill="#3572A5"><animate attributeName="width" from="0" to="28.7" dur="1s" begin="0.32s" fill="freeze"/></rect><rect x="558.7" y="54" width="16.7" height="10" fill="#f34b7d"><animate attributeName="width" from="0" to="16.7" dur="1s" begin="0.40s" fill="freeze"/></rect></g>
+<g transform="translate(24,88)"><circle cx="6" cy="9" r="5" fill="#178600"/>
+      <text x="20" y="14" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#0f172a">C#</text>
+      <rect x="140" y="5" width="262" height="8" rx="4" fill="rgba(15,23,42,0.07)"/>
+      <rect x="140" y="5" width="262.0" height="8" rx="4" fill="#178600"><animate attributeName="width" from="0" to="262.0" dur=".9s" begin="0.30s" fill="freeze"/></rect>
+      <text x="486" y="14" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="12" fill="#526077">4.4 MB</text>
+      <text x="552" y="14" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" font-weight="700" fill="#0f172a">33.6%</text></g><g transform="translate(24,114)"><circle cx="6" cy="9" r="5" fill="#f1e05a"/>
+      <text x="20" y="14" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#0f172a">JavaScript</text>
+      <rect x="140" y="5" width="262" height="8" rx="4" fill="rgba(15,23,42,0.07)"/>
+      <rect x="140" y="5" width="223.1" height="8" rx="4" fill="#f1e05a"><animate attributeName="width" from="0" to="223.1" dur=".9s" begin="0.36s" fill="freeze"/></rect>
+      <text x="486" y="14" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="12" fill="#526077">3.8 MB</text>
+      <text x="552" y="14" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" font-weight="700" fill="#0f172a">28.6%</text></g><g transform="translate(24,140)"><circle cx="6" cy="9" r="5" fill="#3178c6"/>
+      <text x="20" y="14" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#0f172a">TypeScript</text>
+      <rect x="140" y="5" width="262" height="8" rx="4" fill="rgba(15,23,42,0.07)"/>
+      <rect x="140" y="5" width="159.1" height="8" rx="4" fill="#3178c6"><animate attributeName="width" from="0" to="159.1" dur=".9s" begin="0.42s" fill="freeze"/></rect>
+      <text x="486" y="14" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="12" fill="#526077">2.7 MB</text>
+      <text x="552" y="14" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" font-weight="700" fill="#0f172a">20.4%</text></g><g transform="translate(24,166)"><circle cx="6" cy="9" r="5" fill="#00ADD8"/>
+      <text x="20" y="14" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#0f172a">Go</text>
+      <rect x="140" y="5" width="262" height="8" rx="4" fill="rgba(15,23,42,0.07)"/>
+      <rect x="140" y="5" width="69.8" height="8" rx="4" fill="#00ADD8"><animate attributeName="width" from="0" to="69.8" dur=".9s" begin="0.48s" fill="freeze"/></rect>
+      <text x="486" y="14" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="12" fill="#526077">1.2 MB</text>
+      <text x="552" y="14" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" font-weight="700" fill="#0f172a">9.0%</text></g><g transform="translate(24,192)"><circle cx="6" cy="9" r="5" fill="#3572A5"/>
+      <text x="20" y="14" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#0f172a">Python</text>
+      <rect x="140" y="5" width="262" height="8" rx="4" fill="rgba(15,23,42,0.07)"/>
+      <rect x="140" y="5" width="40.5" height="8" rx="4" fill="#3572A5"><animate attributeName="width" from="0" to="40.5" dur=".9s" begin="0.54s" fill="freeze"/></rect>
+      <text x="486" y="14" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="12" fill="#526077">687 kB</text>
+      <text x="552" y="14" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" font-weight="700" fill="#0f172a">5.2%</text></g><g transform="translate(24,218)"><circle cx="6" cy="9" r="5" fill="#f34b7d"/>
+      <text x="20" y="14" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#0f172a">C++</text>
+      <rect x="140" y="5" width="262" height="8" rx="4" fill="rgba(15,23,42,0.07)"/>
+      <rect x="140" y="5" width="23.6" height="8" rx="4" fill="#f34b7d"><animate attributeName="width" from="0" to="23.6" dur=".9s" begin="0.60s" fill="freeze"/></rect>
+      <text x="486" y="14" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="12" fill="#526077">400 kB</text>
+      <text x="552" y="14" text-anchor="end" font-family="'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="13" font-weight="700" fill="#0f172a">3.0%</text></g>
+</svg>
