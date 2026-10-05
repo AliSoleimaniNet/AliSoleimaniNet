@@ -159,7 +159,7 @@ I like the hard parts: distributed systems, identity, payments and the infrastru
 
 #### Latest
 <!--START_SECTION:activity-->
-- 🔒 **419 contributions to private repositories** in the last 30 days · [contribution graph](https://github.com/AliSoleimaniNet)
+- 🔒 **418 contributions to private repositories** in the last 30 days · [contribution graph](https://github.com/AliSoleimaniNet)
 - `Oct 1` ⬆️ Pushed [8 commits](https://github.com/AliSoleimaniNet/AliSoleimaniNet.github.io/commit/b9ead0384f8744282ce6c1a970e4f7e38c58efa0) to [AliSoleimaniNet.github.io](https://github.com/AliSoleimaniNet/AliSoleimaniNet.github.io) · <sub>Reorder experience</sub>
 - `Sep 27` ⬆️ Pushed [1 commit](https://github.com/AliSoleimaniNet/AliSoleimaniNet.github.io/commit/6e2782caf29f1b241aaa96c4ee9b324f82cbf224) to [AliSoleimaniNet.github.io](https://github.com/AliSoleimaniNet/AliSoleimaniNet.github.io) · <sub>Add packet cursor, boot intro, deep links and card lighting</sub>
 - `Sep 26` ⬆️ Pushed [2 commits](https://github.com/AliSoleimaniNet/AliSoleimaniNet.github.io/commit/bbeb7041e695f3622d2ead398c9f32c82a52bcdb) to [AliSoleimaniNet.github.io](https://github.com/AliSoleimaniNet/AliSoleimaniNet.github.io) · <sub>Add architecture, principles, command palette and adaptive quality</sub>
