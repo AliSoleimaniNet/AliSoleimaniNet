@@ -159,8 +159,7 @@ I like the hard parts: distributed systems, identity, payments and the infrastru
 
 #### Latest
 <!--START_SECTION:activity-->
-- 🔒 **391 contributions to private repositories** in the last 30 days · [contribution graph](https://github.com/AliSoleimaniNet)
-- `Oct 1` ⬆️ Pushed [3 commits](https://github.com/AliSoleimaniNet/AliSoleimaniNet.github.io/commit/b9ead0384f8744282ce6c1a970e4f7e38c58efa0) to [AliSoleimaniNet.github.io](https://github.com/AliSoleimaniNet/AliSoleimaniNet.github.io) · <sub>Reorder experience</sub>
+- 🔒 **399 contributions to private repositories** in the last 30 days · [contribution graph](https://github.com/AliSoleimaniNet)
 <!--END_SECTION:activity-->
 
 <br>
